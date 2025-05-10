@@ -54,7 +54,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     private void cleanUp() {
         try { 
             // Perform WebDriver cleanup
-            CommonUtils.tearDown();
+            tearDown();
 
             // Ensure all soft assertions are checked
             try {
@@ -92,15 +92,15 @@ public class TestRunner extends AbstractTestNGCucumberTests {
                     logger(e);
                 }
 
-                // Clear static references in LoginPage
                 Class<?>[] classesToClear = {
                     LoginPage.class,
+                    Sidebar.class,
+                    ProductPage.class,
                     Waits.class,
                     Asserts.class,
                     DriverBase.class,
                     CommonUtils.class
                 };
-
                 for (Class<?> clazz : classesToClear) {
                     for (java.lang.reflect.Field field : clazz.getDeclaredFields()) {
                         if (java.lang.reflect.Modifier.isStatic(field.getModifiers()) && 
@@ -124,5 +124,4 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         // Initialize Extent Report
         ExtentReportUtil.initializeReport();
     }
-
 }

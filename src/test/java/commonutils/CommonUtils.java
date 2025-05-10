@@ -23,15 +23,25 @@ public class CommonUtils extends DriverBase{
 
     public static final Logger logger = LogManager.getLogger(CommonUtils.class);
 
+    public static String getConfig(String key) {
+        try {
+            FileInputStream fis = new FileInputStream(new File("src/config.properties"));
+            Properties prop = new Properties();
+            prop.load(fis);
+            return prop.getProperty(key);
+        } catch (Exception e) {
+            logger.error("Error reading config file: {}", e.getMessage(), e);
+            return null;
+        }
+    }
+
     // Explicitly initialize WebDriver and navigate to the URL
     public static void startUp() {
         try {
             dr = setUp(); // Initialize WebDriver
-            FileInputStream fis = new FileInputStream(new File("src/config.properties"));
-            Properties prop = new Properties();
-            prop.load(fis);
 
-            String url = prop.getProperty("URL");
+            String url = getConfig("URL");
+
             if (url != null && !url.isEmpty()) {
                 dr.get(url);
                 logger.info("Navigated to URL: {}", url);

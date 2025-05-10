@@ -1,12 +1,9 @@
 package stepmethods;
 
-import java.io.FileInputStream;
-import java.io.File;
-
-
-import java.util.Properties;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.WebElement;
 
+import static base.DriverBase.dr;
 import static base.ExtentReportUtil.*;
 import static pages.LoginPage.*;
 import static pages.ProductPage.*;
@@ -21,7 +18,7 @@ public class StepMethods{
     public static void launchPageTitle(){
 
         try{
-
+            
             createAndGetTest("Login Page Test");
             
             waitTitle("Swag Labs");
@@ -44,20 +41,12 @@ public class StepMethods{
             clearText(username);
             clearText(password);
 
-            FileInputStream fis = new FileInputStream(new File("src/config.properties"));
-
-            Properties prop = new Properties();
-            prop.load(fis);
-            String USERNAME = prop.getProperty("USERNAME");
-            String PASSWORD = prop.getProperty("PASSWORD");
+            String USERNAME = getConfig("USERNAME");
+            String PASSWORD = getConfig("PASSWORD");
         
             username.sendKeys(USERNAME);
             password.sendKeys(PASSWORD);
             loginButton.click();
-    
-            softAssertEquals(dr.getTitle(), "Swag Labs");
-
-            Thread.sleep(3000);
         }
         catch(Exception e){
             logger(e);
@@ -78,10 +67,23 @@ public class StepMethods{
             new Select(sortBy).selectByVisibleText("Price (high to low)");
             Thread.sleep(3000);
 
-            scrollAction(SauceLabsOnesie);
-            softAssertEquals(SauceLabsOnesie.getText(), "Sauce Labs Onesie");
-            Thread.sleep(3000);
-            SauceLabsOnesie.click();
+            WebElement[] productsToCheck = {
+                SauceLabsBackpack,
+                SauceLabsBikeLight,
+                SauceLabsBoltTShirt,
+                SauceLabsFleeceJacket,
+                SauceLabsOnesie,
+            };
+
+            for ( WebElement product : productsToCheck) {
+                scrollAction(product);
+                product.click();
+                String productName = product.getText();
+                waitVisibility(backToProducts);
+                softAssertEquals(productDescription.getText(), productName);
+                backToProducts.click();
+            }
+            
             Thread.sleep(3000);
         }
         catch(Exception e){
