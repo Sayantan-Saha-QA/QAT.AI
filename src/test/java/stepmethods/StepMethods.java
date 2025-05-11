@@ -3,7 +3,7 @@ package stepmethods;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebElement;
 
-import static base.DriverBase.dr;
+import static base.DriverBase.*;
 import static base.ExtentReportUtil.*;
 import static pages.LoginPage.*;
 import static pages.ProductPage.*;
@@ -22,8 +22,8 @@ public class StepMethods{
             createAndGetTest("Login Page Test");
             
             waitTitle("Swag Labs");
-            System.out.println("Page title is: " + dr.getTitle());
-            softAssertEquals(dr.getTitle(), "Swag Labs");
+            System.out.println("Page title is: " + getDr().getTitle());
+            softAssertEquals(getDr().getTitle(), "Swag Labs");
         }
         catch(Exception e){
             logger(e);
@@ -33,20 +33,25 @@ public class StepMethods{
     public static void loginMethod(){
 
         try{
-
             createAndGetTest("Login Page Test");
             //test random credentials can be entered and deleted
-            username.sendKeys("abcd");
-            password.sendKeys("1234");
-            clearText(username);
-            clearText(password);
 
-            String USERNAME = getConfig("USERNAME");
-            String PASSWORD = getConfig("PASSWORD");
-        
-            username.sendKeys(USERNAME);
-            password.sendKeys(PASSWORD);
-            loginButton.click();
+            String[] userName = getConfig("USERNAME").split(",");
+            String[] passWord = getConfig("PASSWORD").split(",");
+
+            for (String user : userName){
+                for (String pass : passWord){
+                    username.sendKeys(user);
+                    password.sendKeys(pass);
+                    Thread.sleep(3000);
+                    loginButton.click();
+                    
+                    if (!getDr().getCurrentUrl().contains("inventory.html")) {
+                        clearText(username);
+                        clearText(password);
+                    }  
+                }
+            }
         }
         catch(Exception e){
             logger(e);
@@ -61,7 +66,7 @@ public class StepMethods{
             createAndGetTest("Login Page Test");
 
             waitTitle("Swag Labs");
-            softAssertEquals(dr.getTitle(), "Swag Labs");
+            softAssertEquals(getDr().getTitle(), "Swag Labs");
             Thread.sleep(3000);
             
             new Select(sortBy).selectByVisibleText("Price (high to low)");

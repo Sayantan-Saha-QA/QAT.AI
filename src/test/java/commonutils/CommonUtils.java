@@ -38,12 +38,12 @@ public class CommonUtils extends DriverBase{
     // Explicitly initialize WebDriver and navigate to the URL
     public static void startUp() {
         try {
-            dr = setUp(); // Initialize WebDriver
+            setUp(); // Initialize WebDriver
 
             String url = getConfig("URL");
 
             if (url != null && !url.isEmpty()) {
-                dr.get(url);
+                getDr().get(url);
                 logger.info("Navigated to URL: {}", url);
             } else {
                 logger.error("URL is not defined in the properties file.");
@@ -64,17 +64,8 @@ public class CommonUtils extends DriverBase{
             logout.click();
         } catch (InterruptedException e) {
             logger.error("Thread sleep interrupted: {}", e.getMessage(), e);
-        }
-
-
-        try {
-            if (dr != null) {
-                dr.quit(); // Close the browser
-                dr = null; // Reset the static driver reference
-                logger.info("Browser closed successfully.");
-            }
-        } catch (Exception e) {
-            logger.error("Error while closing the browser: {}", e.getMessage(), e);
+        } finally{
+            closeBrowser();
         }
     }
 
@@ -86,7 +77,7 @@ public class CommonUtils extends DriverBase{
 
     public static void clearText(WebElement element){
         try{
-            new Actions(dr)
+            new Actions(getDr())
             .keyDown(element, Keys.COMMAND)
             .sendKeys("a").keyUp(element, Keys.COMMAND)
             .pause(100)
@@ -101,7 +92,7 @@ public class CommonUtils extends DriverBase{
 
     public static void rightClick(WebElement element){
         try{
-            new Actions(dr).
+            new Actions(getDr()).
             contextClick(element)
             .build().perform();
         }
@@ -113,11 +104,11 @@ public class CommonUtils extends DriverBase{
     public static void scrollAction(WebElement element) {
         try {
             // Scroll the element into view using JavascriptExecutor
-            JavascriptExecutor js = (JavascriptExecutor) dr;
+            JavascriptExecutor js = (JavascriptExecutor) getDr();
             js.executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element);
     
             // Perform the action after scrolling
-            new Actions(dr)
+            new Actions(getDr())
                 .moveToElement(element)
                 .click()
                 .build()
@@ -128,21 +119,21 @@ public class CommonUtils extends DriverBase{
     }
 
     public static void zoom(WebElement element, int zoomLevel) {
-        JavascriptExecutor js = (JavascriptExecutor) dr;
+        JavascriptExecutor js = (JavascriptExecutor) getDr();
         js.executeScript("arguments[0].style.transform = 'scale(' + arguments[1] + ')';", element, zoomLevel);    
     }
 
     public static void getWindowhandles(){
         //Store all window handles in a set
-        Set<String> allWindowHandles = dr.getWindowHandles();
+        Set<String> allWindowHandles = getDr().getWindowHandles();
         //Iterate through the set and print each window handle
         for (String windowHandle : allWindowHandles) {
             System.out.println("Window Handle: " + windowHandle);
         }
         //Switch to the new window
         for (String windowHandle : allWindowHandles) {
-            if (!windowHandle.equals(dr.getWindowHandle())) {
-                dr.switchTo().window(windowHandle);
+            if (!windowHandle.equals(getDr().getWindowHandle())) {
+                getDr().switchTo().window(windowHandle);
                 break;
             }
         }

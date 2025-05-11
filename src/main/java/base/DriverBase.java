@@ -4,43 +4,58 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
-
 import org.apache.logging.log4j.*;
-
-
 
 public class DriverBase {
 
-    public static WebDriver dr;
-
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static final Logger logger = LogManager.getLogger(DriverBase.class);
 
+    // Get the WebDriver instance for the current thread
+    public static WebDriver getDr() {
+        return driver.get();
+    }
+
+    // Set up the WebDriver
     public static WebDriver setUp() {
+        try {
+            
+            String driverPath = "/Users/sayantansaha/Downloads/QAT.AI/src/main/java/resources/geckodriver";
+            // Set the GeckoDriver path
+            System.setProperty("webdriver.gecko.driver", driverPath);
 
-        try{
-            FileInputStream fis = new FileInputStream(new File("src/config.properties"));
-            Properties prop = new Properties();
-            prop.load(fis);
-            prop.getProperty("driverpath");
+            // Configure Firefox options
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("--disable-extensions");
+
+            // Initialize the WebDriver and set it in ThreadLocal
+            WebDriver webDriver = new FirefoxDriver(options);
+            webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+            webDriver.manage().deleteAllCookies();
+            webDriver.manage().window().maximize();
+
+            driver.set(webDriver); // Associate WebDriver with the current thread
+            logger.info("WebDriver initialized successfully.");
+        } catch (Exception e) {
+            logger.error("Exception occurred during WebDriver setup: {}", e.getMessage(), e);
+            throw new RuntimeException("Failed to initialize WebDriver.", e);
         }
-        catch (Exception e){
-            logger.error("Exception occurred: {}", e.getMessage(), e);
+
+        return getDr();
+    } 
+
+    public static void closeBrowser() {
+        try {
+                getDr().quit(); 
+                setUp().quit();
+                driver.remove();
+                logger.info("WebDriver closed successfully.");
+            }
+         catch (Exception e) {
+            logger.error("Error while closing the WebDriver: {}", e.getMessage(), e);
         }
-
-        FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("--disable-extensions");
-
-
-        dr = new FirefoxDriver(options);
-
-        dr.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        dr.manage().deleteAllCookies();
-
-        dr.manage().window().maximize();
-        return dr;
     }
 }

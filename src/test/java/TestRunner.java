@@ -36,11 +36,11 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     {
         // Call startup method before tests
         CommonUtils.startUp();
-        
+
         // Initialize PageFactory elements for all page classes
-        PageFactory.initElements(CommonUtils.dr, LoginPage.class);
-        PageFactory.initElements(CommonUtils.dr, Sidebar.class);
-        PageFactory.initElements(CommonUtils.dr, ProductPage.class);
+        PageFactory.initElements(CommonUtils.getDr(), LoginPage.class);
+        PageFactory.initElements(CommonUtils.getDr(), Sidebar.class);
+        PageFactory.initElements(CommonUtils.getDr(), ProductPage.class);
 
         // Add a shutdown hook to ensure teardown is called after tests
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
@@ -52,72 +52,59 @@ public class TestRunner extends AbstractTestNGCucumberTests {
      * Clears all static instances after test execution.
      */
     private void cleanUp() {
-        try { 
-            // Perform WebDriver cleanup
+        try {
+            softAssert.assertAll();
+        } catch (AssertionError e) {
+            // Log soft assertion failure in Extent Report
+            ExtentReportUtil.createAndGetTest("Soft Assertion Failure").fail("Soft assertion failed: " + e.getMessage());
+            throw e;
+        } finally {
             tearDown();
+            // Flush Extent Report
+            ExtentReportUtil.flushReport();
 
-            // Ensure all soft assertions are checked
+            // Open the Extent Report in the default browser
             try {
-                softAssert.assertAll();
-            } 
-            catch (AssertionError e) {
-                // Log soft assertion failure in Extent Report
-                ExtentReportUtil.createAndGetTest("Soft Assertion Failure").fail("Soft assertion failed: " + e.getMessage());
-                throw e;
-            } 
-            finally {
-                // Flush Extent Report
-                ExtentReportUtil.flushReport();
-
-                try {
-                    Thread.sleep(3000);
-                } 
-                catch (InterruptedException e) {
-                    logger(e);
-                    Thread.currentThread().interrupt(); // Restore the interrupted status
+                File reportFile = new File("target/ExtentReport.html");
+                if (reportFile.exists()) {
+                    Desktop.getDesktop().browse(reportFile.toURI());
+                    logger.info("Extent Report opened in the default browser.");
+                } else {
+                    logger.info("Extent Report file not found: " + reportFile.getAbsolutePath());
                 }
+            } catch (IOException e) {
+                logger(e);
+            }
 
-                // Open the Extent Report in the default browser
-                try {
-                    File reportFile = new File("target/ExtentReport.html");
-                    if (reportFile.exists()) {
-                        Desktop.getDesktop().browse(reportFile.toURI());
-                        logger.info("Extent Report opened in the default browser.");
-                    } 
-                    else {
-                        logger.info("Extent Report file not found: " + reportFile.getAbsolutePath());
-                    }
-                } 
-                catch (IOException e) {
-                    logger(e);
-                }
-
-                Class<?>[] classesToClear = {
-                    LoginPage.class,
-                    Sidebar.class,
-                    ProductPage.class,
-                    Waits.class,
-                    Asserts.class,
-                    DriverBase.class,
-                    CommonUtils.class
-                };
-                for (Class<?> clazz : classesToClear) {
-                    for (java.lang.reflect.Field field : clazz.getDeclaredFields()) {
-                        if (java.lang.reflect.Modifier.isStatic(field.getModifiers()) && 
-                            !java.lang.reflect.Modifier.isFinal(field.getModifiers())) {
-                            field.setAccessible(true); // Make the field accessible
+            Class<?>[] classesToClear = {
+                LoginPage.class,
+                Sidebar.class,
+                ProductPage.class,
+                Waits.class,
+                Asserts.class,
+                DriverBase.class,
+                CommonUtils.class
+            };
+            for (Class<?> clazz : classesToClear) {
+                for (java.lang.reflect.Field field : clazz.getDeclaredFields()) {
+                    if (java.lang.reflect.Modifier.isStatic(field.getModifiers()) &&
+                        !java.lang.reflect.Modifier.isFinal(field.getModifiers())) {
+                        field.setAccessible(true); // Make the field accessible
+                        try {
                             field.set(null, null); // Set the static field to null
+                        } catch (IllegalAccessException e) {
+                            logger(e);
                         }
                     }
                 }
-
-                logger.info("All static instances have been cleared.");
             }
-        } 
-        catch (Exception e) {
-            logger(e);
+            logger.info("All static instances have been cleared.");
         }
     }
+    /**
+     * This method is executed before the test class is run.
+     * It initializes the Extent Report.
+     */
 
     @BeforeClass
     public void startReport() {

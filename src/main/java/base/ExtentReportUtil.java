@@ -1,5 +1,11 @@
 package base;
 
+import java.io.IOException;
+
+import org.apache.logging.log4j.core.util.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -30,7 +36,6 @@ public class ExtentReportUtil {
         test = extent.createTest(testName);
         return test;
     }
-
     // Flush the report
     public static void flushReport() {
         if (extent != null) {
