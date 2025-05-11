@@ -16,9 +16,6 @@ import static commonutils.DatabaseUtil.insertProductName;
 
 public class StepMethods{
 
-    
-
-
     public static void launchPageTitle(){
 
         try{
@@ -32,6 +29,8 @@ public class StepMethods{
         catch(Exception e){
             logger(e);
         }
+
+        snap("loginpage");
     }
 
     public static void loginMethod(){
@@ -47,19 +46,22 @@ public class StepMethods{
                 for (String pass : passWord){
                     username.sendKeys(user);
                     password.sendKeys(pass);
-                    Thread.sleep(3000);
+                    Thread.sleep(1000);
                     loginButton.click();
+                    snap(user+pass);
                     
                     if (!getDr().getCurrentUrl().contains("inventory.html")) {
                         clearText(username);
                         clearText(password);
-                    }  
+                    }
                 }
             }
         }
         catch(Exception e){
             logger(e);
         }
+
+        snap("loggedin");
 
     }
 
@@ -93,6 +95,8 @@ public class StepMethods{
                 insertProductName(productDescriptionText);
                 waitVisibility(backToProducts);
                 softAssertEquals(productDescription.getText(), productName);
+
+                snap(productName);
                 backToProducts.click();
             }
             
@@ -101,6 +105,8 @@ public class StepMethods{
         catch(Exception e){
             logger(e);
         }
+
+        snap("productpage");
     
     }
     

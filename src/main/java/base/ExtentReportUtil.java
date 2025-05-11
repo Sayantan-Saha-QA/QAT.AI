@@ -1,8 +1,11 @@
 package base;
 
-import java.io.IOException;
+import static base.DriverBase.getDr;
 
-import org.apache.logging.log4j.core.util.FileUtils;
+import java.io.IOException;
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -10,6 +13,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import com.aventstack.extentreports.MediaEntityBuilder;
 
 public class ExtentReportUtil {
 
@@ -36,11 +41,40 @@ public class ExtentReportUtil {
         test = extent.createTest(testName);
         return test;
     }
+
+    // Get the current test
+    public static ExtentTest getTest() {
+        return test;
+    }
+
+    public static void snap(String stepName) {
+    try {
+
+        File screenshotDir = new File("target/screenshots/");
+        if (!screenshotDir.exists()) {
+            screenshotDir.mkdirs();
+        }
+        // Capture the screenshot
+        File srcFile = ((TakesScreenshot) getDr()).getScreenshotAs(OutputType.FILE);
+        String destPath = "target/screenshots/" + stepName + ".png";
+        File destFile = new File(destPath);
+        FileUtils.copyFile(srcFile, destFile);
+
+        // Attach the screenshot to the Extent Report
+        ExtentReportUtil.getTest().info("Screenshot for step: " + stepName,
+            MediaEntityBuilder.createScreenCaptureFromPath(destPath).build());
+    } catch (IOException e) {
+        ExtentReportUtil.getTest().info("Failed to capture screenshot for step: " + stepName);
+        e.printStackTrace();
+    }
+}
     // Flush the report
     public static void flushReport() {
         if (extent != null) {
             extent.flush();
         }
     }
+
+
     
 }
