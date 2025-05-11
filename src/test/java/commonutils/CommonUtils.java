@@ -18,7 +18,6 @@ import org.openqa.selenium.interactions.Actions;
 import base.DriverBase;
 
 
-    
 public class CommonUtils extends DriverBase{
 
     public static final Logger logger = LogManager.getLogger(CommonUtils.class);

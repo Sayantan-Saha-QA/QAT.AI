@@ -11,8 +11,12 @@ import static commonutils.Asserts.*;
 import static commonutils.CommonUtils.*;
 import static commonutils.Waits.*;
 
+import static commonutils.DatabaseUtil.insertProductName;
+
 
 public class StepMethods{
+
+    
 
 
     public static void launchPageTitle(){
@@ -84,6 +88,9 @@ public class StepMethods{
                 scrollAction(product);
                 product.click();
                 String productName = product.getText();
+                String productDescriptionText = productDescription.getText();
+
+                insertProductName(productDescriptionText);
                 waitVisibility(backToProducts);
                 softAssertEquals(productDescription.getText(), productName);
                 backToProducts.click();

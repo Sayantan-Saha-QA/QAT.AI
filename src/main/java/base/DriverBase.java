@@ -3,10 +3,8 @@ package base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import java.io.File;
-import java.io.FileInputStream;
+
 import java.time.Duration;
-import java.util.Properties;
 import org.apache.logging.log4j.*;
 
 public class DriverBase {

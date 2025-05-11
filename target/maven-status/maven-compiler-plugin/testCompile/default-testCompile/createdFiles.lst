@@ -4,6 +4,7 @@ pages/ProductPage.class
 commonutils/Asserts.class
 stepmethods/StepMethods.class
 steps/Step.class
+commonutils/DatabaseUtil.class
 pages/LoginPage.class
 TestRunner.class
 pages/Sidebar.class
