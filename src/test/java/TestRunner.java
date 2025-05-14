@@ -9,7 +9,7 @@ import java.io.File;
 import org.openqa.selenium.support.PageFactory;
 
 import pages.*;
-
+import stepdefs.StepDef;
 import base.DriverBase;
 import base.ExtentReportUtil;
 import commonutils.Asserts;
@@ -80,6 +80,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
                 LoginPage.class,
                 Sidebar.class,
                 ProductPage.class,
+                StepDef.class,
                 Waits.class,
                 Asserts.class,
                 DriverBase.class,

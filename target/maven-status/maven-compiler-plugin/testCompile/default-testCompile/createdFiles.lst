@@ -2,7 +2,7 @@ commonutils/Waits.class
 commonutils/CommonUtils.class
 pages/ProductPage.class
 commonutils/Asserts.class
-stepmethods/StepMethods.class
+stepdefs/StepDef.class
 steps/Step.class
 commonutils/DatabaseUtil.class
 pages/LoginPage.class

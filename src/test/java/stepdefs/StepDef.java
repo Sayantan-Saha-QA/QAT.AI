@@ -1,4 +1,4 @@
-package stepmethods;
+package stepdefs;
 
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebElement;
@@ -14,7 +14,7 @@ import static commonutils.Waits.*;
 import static commonutils.DatabaseUtil.insertProductName;
 
 
-public class StepMethods{
+public class StepDef{
 
     public static void launchPageTitle(){
 

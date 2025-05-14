@@ -6,5 +6,5 @@
 /Users/sayantansaha/Downloads/QAT.AI/src/test/java/pages/Sidebar.java
 /Users/sayantansaha/Downloads/QAT.AI/src/test/java/TestRunner.java
 /Users/sayantansaha/Downloads/QAT.AI/src/test/java/commonutils/Asserts.java
-/Users/sayantansaha/Downloads/QAT.AI/src/test/java/stepmethods/StepMethods.java
+/Users/sayantansaha/Downloads/QAT.AI/src/test/java/stepdefs/StepDef.java
 /Users/sayantansaha/Downloads/QAT.AI/src/test/java/commonutils/DatabaseUtil.java

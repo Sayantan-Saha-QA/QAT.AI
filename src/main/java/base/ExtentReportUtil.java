@@ -50,13 +50,10 @@ public class ExtentReportUtil {
     public static void snap(String stepName) {
     try {
 
-        File screenshotDir = new File("target/screenshots/");
-        if (!screenshotDir.exists()) {
-            screenshotDir.mkdirs();
-        }
+        String timeStamp = java.time.LocalDateTime.now().toString().replace(":", "-");
         // Capture the screenshot
         File srcFile = ((TakesScreenshot) getDr()).getScreenshotAs(OutputType.FILE);
-        String destPath = "target/screenshots/" + stepName + ".png";
+        String destPath = "screenshots/" + stepName + ".png";
         File destFile = new File(destPath);
         FileUtils.copyFile(srcFile, destFile);
 

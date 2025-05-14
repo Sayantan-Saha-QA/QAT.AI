@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.time.ZonedDateTime;
 
 public class DatabaseUtil {
 
@@ -18,12 +19,15 @@ public class DatabaseUtil {
 
     // Insert product name into the database
     public static void insertProductName(String productName) {
-        String query = "INSERT INTO product_names (product_name) VALUES (?)";
+        String query = "INSERT INTO product_names (timeStamp, product_name) VALUES (?, ?)";
 
+        ZonedDateTime timeStamp = ZonedDateTime.now(java.time.ZoneId.of("UTC"));
+                                  
         try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+            PreparedStatement preparedStatement = connection.prepareStatement(query)) {
 
-            preparedStatement.setString(1, productName);
+            preparedStatement.setObject(1, timeStamp);
+            preparedStatement.setString(2, productName);
             preparedStatement.executeUpdate();
 
             System.out.println("Inserted product: " + productName + " into the database.");

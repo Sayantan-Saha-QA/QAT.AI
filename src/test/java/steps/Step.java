@@ -1,7 +1,7 @@
 package steps;
 
 
-import static stepmethods.StepMethods.*;
+import static stepdefs.StepDef.*;
 
 import io.cucumber.java.en.*;
 
