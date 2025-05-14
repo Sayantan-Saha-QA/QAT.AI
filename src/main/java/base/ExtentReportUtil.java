@@ -49,8 +49,6 @@ public class ExtentReportUtil {
 
     public static void snap(String stepName) {
     try {
-
-        String timeStamp = java.time.LocalDateTime.now().toString().replace(":", "-");
         // Capture the screenshot
         File srcFile = ((TakesScreenshot) getDr()).getScreenshotAs(OutputType.FILE);
         String destPath = "screenshots/" + stepName + ".png";

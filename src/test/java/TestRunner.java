@@ -33,24 +33,18 @@ import org.testng.annotations.*;
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
-    {
-        // Call startup method before tests
+    @BeforeClass (alwaysRun = true, enabled = true)
+    public void startReport() {
         CommonUtils.startUp();
-
         // Initialize PageFactory elements for all page classes
         PageFactory.initElements(CommonUtils.getDr(), LoginPage.class);
         PageFactory.initElements(CommonUtils.getDr(), Sidebar.class);
         PageFactory.initElements(CommonUtils.getDr(), ProductPage.class);
-
-        // Add a shutdown hook to ensure teardown is called after tests
-        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            this.cleanUp();
-        }));
+        // Initialize Extent Report
+        ExtentReportUtil.initializeReport();
     }
-
-    /**
-     * Clears all static instances after test execution.
-     */
+    
+    @AfterClass (alwaysRun = true, enabled = true)
     private void cleanUp() {
         try {
             softAssert.assertAll();
@@ -59,8 +53,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
             ExtentReportUtil.createAndGetTest("Soft Assertion Failure").fail("Soft assertion failed: " + e.getMessage());
             throw e;
         } finally {
-            tearDown();
-            // Flush Extent Report
+            CommonUtils.tearDown();
             ExtentReportUtil.flushReport();
 
             // Open the Extent Report in the default browser
@@ -101,15 +94,5 @@ public class TestRunner extends AbstractTestNGCucumberTests {
             }
             logger.info("All static instances have been cleared.");
         }
-    }
-    /**
-     * This method is executed before the test class is run.
-     * It initializes the Extent Report.
-     */
-
-    @BeforeClass
-    public void startReport() {
-        // Initialize Extent Report
-        ExtentReportUtil.initializeReport();
     }
 }

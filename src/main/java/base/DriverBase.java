@@ -46,14 +46,18 @@ public class DriverBase {
     } 
 
     public static void closeBrowser() {
-        try {
-                getDr().quit(); 
-                setUp().quit();
-                driver.remove();
-                logger.info("WebDriver closed successfully.");
-            }
-         catch (Exception e) {
-            logger.error("Error while closing the WebDriver: {}", e.getMessage(), e);
+    try {
+        WebDriver currentDriver = getDr();
+        if (currentDriver != null) {
+            currentDriver.quit();
+            logger.info("WebDriver closed successfully.");
+        } else {
+            logger.warn("No WebDriver instance found for this thread.");
         }
+    } catch (Exception e) {
+        logger.error("Error while closing the WebDriver: {}", e.getMessage(), e);
+    } finally {
+        driver.remove(); // Always remove the ThreadLocal reference
     }
+}
 }
