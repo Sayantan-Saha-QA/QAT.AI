@@ -6,8 +6,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.*;
 import java.time.ZonedDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -33,11 +31,11 @@ public class DatabaseUtil {
         String query = "INSERT INTO product_names (timeStamp, product_name) VALUES (?, ?)";
 
         try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+             PreparedStatement stmt = connection.prepareStatement(query)) {
 
-            preparedStatement.setObject(1, timeStamp);
-            preparedStatement.setString(2, productName);
-            preparedStatement.executeUpdate();
+            stmt.setObject(1, timeStamp);
+            stmt.setString(2, productName);
+            stmt.executeUpdate();
 
             System.out.println("Inserted product: " + productName + " into the database.");
 

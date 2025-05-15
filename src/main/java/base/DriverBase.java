@@ -20,11 +20,6 @@ public class DriverBase {
     // Set up the WebDriver
     public static WebDriver setUp() {
         try {
-            
-            String driverPath = "/Users/sayantansaha/Downloads/QAT.AI/src/main/java/resources/geckodriver";
-            // Set the GeckoDriver path
-            System.setProperty("webdriver.gecko.driver", driverPath);
-
             // Configure Firefox options
             FirefoxOptions options = new FirefoxOptions();
             options.addArguments("--disable-extensions");
@@ -57,7 +52,7 @@ public class DriverBase {
     } catch (Exception e) {
         logger.error("Error while closing the WebDriver: {}", e.getMessage(), e);
     } finally {
-        driver.remove(); // Always remove the ThreadLocal reference
+        driver.remove();
     }
 }
 }
