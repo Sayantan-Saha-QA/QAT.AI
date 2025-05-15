@@ -1,6 +1,9 @@
 package stepdefs;
 
 import org.openqa.selenium.support.ui.Select;
+
+import commonutils.DatabaseUtil;
+
 import org.openqa.selenium.WebElement;
 
 import static base.DriverBase.*;
@@ -11,7 +14,7 @@ import static commonutils.Asserts.*;
 import static commonutils.CommonUtils.*;
 import static commonutils.Waits.*;
 
-import static commonutils.DatabaseUtil.insertProductName;
+import static commonutils.DatabaseUtil.*;
 
 
 public class StepDef{
@@ -93,6 +96,8 @@ public class StepDef{
                 String productDescriptionText = productDescription.getText();
 
                 insertProductName(productDescriptionText);
+                saveProductNameToJson(timestamp, productDescriptionText);
+
                 waitVisibility(backToProducts);
                 softAssertEquals(productDescription.getText(), productName);
 

@@ -112,6 +112,17 @@
       <artifactId>guava</artifactId>
       <version>32.1.2-jre</version>
     </dependency>
+
+
+<dependency>
+
+    <groupId>org.json</groupId>
+
+    <artifactId>json</artifactId>
+
+    <version>20230227</version>
+
+</dependency>
   </dependencies>
 
   <build>
