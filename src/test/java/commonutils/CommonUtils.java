@@ -122,21 +122,14 @@ public class CommonUtils extends DriverBase{
         js.executeScript("arguments[0].style.transform = 'scale(' + arguments[1] + ')';", element, zoomLevel);    
     }
 
-    public static void getWindowhandles(){
-        //Store all window handles in a set
+    public static void switchToWindowHandle(String windowHandle) {
         Set<String> allWindowHandles = getDr().getWindowHandles();
-        //Iterate through the set and print each window handle
-        for (String windowHandle : allWindowHandles) {
-            System.out.println("Window Handle: " + windowHandle);
+        if (allWindowHandles.contains(windowHandle)) {
+            getDr().switchTo().window(windowHandle);
+            logger.info("Switched to window handle: {}", windowHandle);
+        } else {
+            logger.error("Window handle not found: {}", windowHandle);
         }
-        //Switch to the new window
-        for (String windowHandle : allWindowHandles) {
-            if (!windowHandle.equals(getDr().getWindowHandle())) {
-                getDr().switchTo().window(windowHandle);
-                break;
-            }
-        }
-
     }
    
 }

@@ -37,9 +37,9 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     public void startReport() {
         CommonUtils.startUp();
         // Initialize PageFactory elements for all page classes
-        PageFactory.initElements(CommonUtils.getDr(), LoginPage.class);
-        PageFactory.initElements(CommonUtils.getDr(), Sidebar.class);
-        PageFactory.initElements(CommonUtils.getDr(), ProductPage.class);
+        PageFactory.initElements(getDr(), LoginPage.class);
+        PageFactory.initElements(getDr(), Sidebar.class);
+        PageFactory.initElements(getDr(), ProductPage.class);
         // Initialize Extent Report
         ExtentReportUtil.initializeReport();
     }
