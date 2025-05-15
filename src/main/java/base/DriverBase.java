@@ -20,6 +20,13 @@ public class DriverBase {
     // Set up the WebDriver
     public static WebDriver setUp() {
         try {
+
+            /* Selenium manager is supported from selenium 4.6.0 - 
+               no need to set path to driver binary 
+               if older version is being used use webdriver manager 
+            io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver().setup();
+               */
+            
             // Configure Firefox options
             FirefoxOptions options = new FirefoxOptions();
             options.addArguments("--disable-extensions");
