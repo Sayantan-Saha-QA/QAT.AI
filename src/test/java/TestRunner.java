@@ -43,8 +43,9 @@ import org.testng.annotations.*;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     static {
+        DriverManagerFactory.register("chrome", ChromeDriverManager.class);
         DriverManagerFactory.register("firefox", FirefoxDriverManager.class);
-    // To add a new browser: just register it here, no code change needed in DriverBase!
+        // Register more browsers here, no need to edit setUp()!
     }
 
     @BeforeClass (alwaysRun = true, enabled = true)

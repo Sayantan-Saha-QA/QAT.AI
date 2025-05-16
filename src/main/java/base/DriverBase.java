@@ -11,12 +11,6 @@ public class DriverBase {
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static final Logger logger = LogManager.getLogger(DriverBase.class);
 
-    static {
-        DriverManagerFactory.register("chrome", ChromeDriverManager.class);
-        DriverManagerFactory.register("firefox", FirefoxDriverManager.class);
-        // Register more browsers here, no need to edit setUp()!
-    }
-
     public static WebDriver setUp() {
         try {
             String browser = getConfig("browser");
