@@ -1,2 +1,5 @@
+base/FirefoxDriverManager.class
 base/ExtentReportUtil.class
+base/ChromeDriverManager.class
 base/DriverBase.class
+base/DriverManager.class
