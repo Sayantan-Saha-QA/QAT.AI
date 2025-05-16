@@ -34,25 +34,6 @@ public class CommonUtils extends DriverBase{
         }
     }
 
-    // Explicitly initialize WebDriver and navigate to the URL
-    public static void startUp() {
-        try {
-            setUp(); // Initialize WebDriver
-
-            String url = getConfig("URL");
-
-            if (url != null && !url.isEmpty()) {
-                getDr().get(url);
-                logger.info("Navigated to URL: {}", url);
-            } else {
-                logger.error("URL is not defined in the properties file.");
-            }
-        } catch (Exception e) {
-            logger.error("Exception occurred during setup: {}", e.getMessage(), e);
-            throw new RuntimeException("Failed to initialize WebDriver or navigate to URL.", e);
-        }
-    }
-
     // Explicitly quit WebDriver and clean up resources
     public static void tearDown() {
         

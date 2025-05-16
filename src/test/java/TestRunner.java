@@ -35,7 +35,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
     @BeforeClass (alwaysRun = true, enabled = true)
     public void startReport() {
-        CommonUtils.startUp();
+        setUp(); // Initialize WebDriver
         // Initialize PageFactory elements for all page classes
         PageFactory.initElements(getDr(), LoginPage.class);
         PageFactory.initElements(getDr(), Sidebar.class);
