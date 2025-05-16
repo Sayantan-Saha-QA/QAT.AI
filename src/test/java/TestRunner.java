@@ -1,16 +1,25 @@
 import java.io.IOException;
 
+import static base.DriverBase.getDr;
+import static base.DriverBase.setUp;
 import static commonutils.Asserts.*;
 import static commonutils.CommonUtils.*;
 
 import java.awt.Desktop;
 import java.io.File;
 
+import base.DriverManagerFactory;
+import base.ChromeDriverManager;
+import base.FirefoxDriverManager;
+import base.DriverManager;
+
+
 import org.openqa.selenium.support.PageFactory;
 
 import pages.*;
 import stepdefs.StepDef;
 import base.DriverBase;
+import base.DriverManagerFactory;
 import base.ExtentReportUtil;
 import commonutils.Asserts;
 import commonutils.CommonUtils;
@@ -32,6 +41,11 @@ import org.testng.annotations.*;
     tags = "@Swag_Labs" // Executes scenarios with this tag
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
+
+    static {
+        DriverManagerFactory.register("firefox", FirefoxDriverManager.class);
+    // To add a new browser: just register it here, no code change needed in DriverBase!
+    }
 
     @BeforeClass (alwaysRun = true, enabled = true)
     public void startReport() {

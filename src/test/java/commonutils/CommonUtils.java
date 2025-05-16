@@ -2,13 +2,10 @@ package commonutils;
 
 
 import org.apache.logging.log4j.*;
-import java.io.File;
-import java.io.FileInputStream;
+
+import java.util.Set;
 
 import static pages.Sidebar.*;
-
-import java.util.Properties;
-import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -23,20 +20,11 @@ public class CommonUtils extends DriverBase{
     public static final Logger logger = LogManager.getLogger(CommonUtils.class);
 
     public static String getConfig(String key) {
-        try {
-            FileInputStream fis = new FileInputStream(new File("src/config.properties"));
-            Properties prop = new Properties();
-            prop.load(fis);
-            return prop.getProperty(key);
-        } catch (Exception e) {
-            logger.error("Error reading config file: {}", e.getMessage(), e);
-            return null;
-        }
+        return DriverBase.getConfig(key);
     }
 
     // Explicitly quit WebDriver and clean up resources
     public static void tearDown() {
-        
         //logout from the application
         try {
             menu.click();

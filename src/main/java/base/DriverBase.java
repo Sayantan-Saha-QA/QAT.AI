@@ -1,46 +1,32 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
+import org.apache.logging.log4j.*;
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
-import org.apache.logging.log4j.*;
 
 public class DriverBase {
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static final Logger logger = LogManager.getLogger(DriverBase.class);
 
-    public static ChromeDriverManager chromeDriverManager = null;
-    public static FirefoxDriverManager firefoxDriverManager = null;
+    static {
+        DriverManagerFactory.register("chrome", ChromeDriverManager.class);
+        DriverManagerFactory.register("firefox", FirefoxDriverManager.class);
+        // Register more browsers here, no need to edit setUp()!
+    }
 
     public static WebDriver setUp() {
         try {
-            // Ensure driver managers are initialized
-            if (firefoxDriverManager == null) {
-                firefoxDriverManager = new FirefoxDriverManager();
+            String browser = getConfig("browser");
+            if (browser == null) {
+                throw new IllegalArgumentException("No browser specified. Please set 'browser' in config.properties or as a system property.");
             }
-            if (chromeDriverManager == null) {
-                chromeDriverManager = new ChromeDriverManager();
-            }
+            DriverManager driverManager = DriverManagerFactory.getManager(browser);
+            WebDriver webDriver = driverManager.createDriver();
 
-            WebDriver webDriver = null;
-            FileInputStream fis = new FileInputStream("src/config.properties");
-            Properties prop = new Properties();
-            prop.load(fis);
-            String browser = prop.getProperty("browser");
-            String url = prop.getProperty("URL");
-
-            if (browser != null && browser.equalsIgnoreCase("firefox")) {
-                webDriver = firefoxDriverManager.createDriver();
-            } else if (browser != null && browser.equalsIgnoreCase("chrome")) {
-                webDriver = chromeDriverManager.createDriver();
-            }
-
-            if (webDriver == null) {
-                logger.error("No valid browser specified. Please set the 'browser' system property to 'chrome' or 'firefox'.");
-                throw new RuntimeException("No valid browser specified.");
-            }
-
+            String url = getConfig("URL");
             webDriver.manage().deleteAllCookies();
             webDriver.manage().window().maximize();
 
@@ -77,6 +63,18 @@ public class DriverBase {
             logger.error("Error while closing the WebDriver: {}", e.getMessage(), e);
         } finally {
             driver.remove();
+        }
+    }
+
+    public static String getConfig(String key) {
+        try {
+            FileInputStream fis = new FileInputStream(new File("src/config.properties"));
+            Properties prop = new Properties();
+            prop.load(fis);
+            return prop.getProperty(key);
+        } catch (Exception e) {
+            logger.error("Error reading config file: {}", e.getMessage(), e);
+            return null;
         }
     }
 }
