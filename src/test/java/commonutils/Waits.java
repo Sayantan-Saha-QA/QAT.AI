@@ -6,7 +6,6 @@ import static commonutils.CommonUtils.*;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import base.DriverBase;
 
 public class Waits {
 

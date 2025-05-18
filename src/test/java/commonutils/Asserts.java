@@ -8,11 +8,11 @@ public class Asserts {
 
     public static SoftAssert softAssert = new SoftAssert();
     
-    public static void assertEquals(String actual, String expected) {
+    public static void assertEquals(Object actual, Object expected) {
         Assert.assertEquals(actual, expected);
     }
 
-    public static void softAssertEquals(String actual, String expected) { 
+    public static void softAssertEquals(Object actual, Object expected) { 
         softAssert.assertEquals(actual, expected);
     }
 
@@ -36,7 +36,7 @@ public class Asserts {
         softAssert.assertAll();
     }
 
-    public static void assertNotEquals(String actual, String expected) {
+    public static void assertNotEquals(Object actual, Object expected) {
         Assert.assertNotEquals(actual, expected);
     }
 

@@ -11,7 +11,6 @@ import java.io.File;
 import base.DriverManagerFactory;
 import base.ChromeDriverManager;
 import base.FirefoxDriverManager;
-import base.DriverManager;
 
 
 import org.openqa.selenium.support.PageFactory;
@@ -19,7 +18,6 @@ import org.openqa.selenium.support.PageFactory;
 import pages.*;
 import stepdefs.StepDef;
 import base.DriverBase;
-import base.DriverManagerFactory;
 import base.ExtentReportUtil;
 import commonutils.Asserts;
 import commonutils.CommonUtils;

@@ -2,8 +2,6 @@ package stepdefs;
 
 import org.openqa.selenium.support.ui.Select;
 
-import commonutils.DatabaseUtil;
-
 import org.openqa.selenium.WebElement;
 
 import static base.DriverBase.*;
