@@ -13,14 +13,14 @@ public class DriverBase {
 
     public static WebDriver setUp() {
         try {
-            String browser = getConfig("browser");
+            String browser = getConfig("config", "browser");
             if (browser == null) {
                 throw new IllegalArgumentException("No browser specified. Please set 'browser' in config.properties or as a system property.");
             }
             DriverManager driverManager = DriverManagerFactory.getManager(browser);
             WebDriver webDriver = driverManager.createDriver();
 
-            String url = getConfig("URL");
+            String url = getConfig("config","URL");
             webDriver.manage().deleteAllCookies();
             webDriver.manage().window().maximize();
 
@@ -60,9 +60,9 @@ public class DriverBase {
         }
     }
 
-    public static String getConfig(String key) {
+    public static String getConfig(String fileName, String key) {
         try {
-            FileInputStream fis = new FileInputStream(new File("src/config.properties"));
+            FileInputStream fis = new FileInputStream(new File("src/"+fileName+".properties"));
             Properties prop = new Properties();
             prop.load(fis);
             return prop.getProperty(key);

@@ -19,8 +19,8 @@ public class CommonUtils extends DriverBase{
 
     public static final Logger logger = LogManager.getLogger(CommonUtils.class);
 
-    public static String getConfig(String key) {
-        return DriverBase.getConfig(key);
+    public static String getConfig(String fileName, String key) {
+        return DriverBase.getConfig(fileName, key);
     }
 
     // Explicitly quit WebDriver and clean up resources

@@ -40,8 +40,8 @@ public class StepDef{
             createAndGetTest("Login Page Test");
             //test random credentials can be entered and deleted
 
-            String[] userName = getConfig("USERNAME").split(",");
-            String[] passWord = getConfig("PASSWORD").split(",");
+            String[] userName = getConfig("data", "USERNAME").split(",");
+            String[] passWord = getConfig("data", "PASSWORD").split(",");
 
             for (String user : userName){
                 for (String pass : passWord){
