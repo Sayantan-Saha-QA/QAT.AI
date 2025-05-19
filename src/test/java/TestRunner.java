@@ -1,29 +1,20 @@
 import java.io.IOException;
 
-import static base.DriverBase.getDr;
-import static base.DriverBase.setUp;
 import static commonutils.Asserts.*;
 import static commonutils.CommonUtils.*;
 
 import java.awt.Desktop;
 import java.io.File;
-
-import org.reflections.Reflections;
-
 import java.util.Set;
 
-import base.DriverManagerFactory;
-import base.SafariDriverManager;
-import base.FirefoxDriverManager;
-
+import org.reflections.Reflections;
 import org.openqa.selenium.support.PageFactory;
-
-import pages.*;
-import base.ExtentReportUtil;
-import commonutils.CommonUtils;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.*;
 import org.testng.annotations.*;
+
+import base.*;
+import pages.*;
+import commonutils.*;
 
 @CucumberOptions(
     plugin = {
