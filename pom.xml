@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.selenium_automation</groupId>
@@ -29,19 +29,18 @@
       <artifactId>cucumber-testng</artifactId>
       <version>7.11.0</version>
     </dependency>
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.28</version> <!-- Use the latest version -->
-    <scope>provided</scope>
-</dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.28</version>
+      <scope>provided</scope>
+    </dependency>
     <!-- Extent Reports -->
     <dependency>
       <groupId>com.aventstack</groupId>
       <artifactId>extentreports</artifactId>
       <version>5.0.9</version>
     </dependency>
-
     <!-- Logging Dependencies -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -58,21 +57,18 @@
       <artifactId>log4j-api</artifactId>
       <version>2.20.0</version>
     </dependency>
-
     <!-- Selenium Dependency -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>4.32.0</version>
     </dependency>
-
     <!-- TestNG Dependency -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.11.0</version>
     </dependency>
-
     <!-- JUnit Dependency -->
     <dependency>
       <groupId>junit</groupId>
@@ -80,49 +76,45 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
-
     <!-- Apache Commons Lang -->
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.9</version>
     </dependency>
-
     <dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.33</version>
-</dependency>
-
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.33</version>
+    </dependency>
     <!-- Updated Dependencies to Fix Warnings -->
     <dependency>
       <groupId>org.fusesource.jansi</groupId>
       <artifactId>jansi</artifactId>
       <version>2.4.0</version>
     </dependency>
-
     <!-- Add your dependencies here -->
-<dependency>
-    <groupId>commons-io</groupId>
-    <artifactId>commons-io</artifactId>
-    <version>2.11.0</version>
-</dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.11.0</version>
+    </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>32.1.2-jre</version>
     </dependency>
-
-<dependency> <groupId>io.github.bonigarcia</groupId> <artifactId>webdrivermanager</artifactId> <version>5.7.0</version> </dependency>
-<dependency>
-
-    <groupId>org.json</groupId>
-
-    <artifactId>json</artifactId>
-
-    <version>20230227</version>
-
-</dependency>
+    <dependency>
+      <groupId>org.reflections</groupId>
+      <artifactId>reflections</artifactId>
+      <version>0.10.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20230227</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -133,13 +125,11 @@
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
-
         <!-- Maven Compiler Plugin -->
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
         </plugin>
-
         <!-- Maven Surefire Plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -149,54 +139,48 @@
             <argLine>--enable-native-access=ALL-UNNAMED</argLine>
           </configuration>
         </plugin>
-
         <!-- Maven Resources Plugin -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
-
         <!-- Maven Jar Plugin -->
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
-
         <!-- Maven Install Plugin -->
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
           <version>2.5.2</version>
         </plugin>
-
         <!-- Maven Deploy Plugin -->
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
-
         <!-- Maven Site Plugin -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
         </plugin>
-
         <!-- Maven Project Info Reports Plugin -->
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.0</version>
-            <configuration>
-                <source>17</source>
-                <target>17</target>
-                <compilerArgs>
-                    <arg>--add-opens</arg>
-                    <arg>jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
-                </compilerArgs>
-            </configuration>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+          <configuration>
+            <source>17</source>
+            <target>17</target>
+            <compilerArgs>
+              <arg>--add-opens</arg>
+              <arg>jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
+            </compilerArgs>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>

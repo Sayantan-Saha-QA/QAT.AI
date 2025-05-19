@@ -8,20 +8,19 @@ import static commonutils.CommonUtils.*;
 import java.awt.Desktop;
 import java.io.File;
 
-import base.DriverManagerFactory;
-import base.ChromeDriverManager;
-import base.FirefoxDriverManager;
+import org.reflections.Reflections;
 
+import java.util.Set;
+
+import base.DriverManagerFactory;
+import base.SafariDriverManager;
+import base.FirefoxDriverManager;
 
 import org.openqa.selenium.support.PageFactory;
 
 import pages.*;
-import stepdefs.StepDef;
-import base.DriverBase;
 import base.ExtentReportUtil;
-import commonutils.Asserts;
 import commonutils.CommonUtils;
-import commonutils.Waits;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.*;
@@ -41,7 +40,7 @@ import org.testng.annotations.*;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     static {
-        DriverManagerFactory.register("chrome", ChromeDriverManager.class);
+        DriverManagerFactory.register("safari", SafariDriverManager.class);
         DriverManagerFactory.register("firefox", FirefoxDriverManager.class);
         // Register more browsers here, no need to edit setUp()!
     }
@@ -49,10 +48,11 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     @BeforeClass (alwaysRun = true, enabled = true)
     public void startReport() {
         setUp(); // Initialize WebDriver
-        // Initialize PageFactory elements for all page classes
+        
         PageFactory.initElements(getDr(), LoginPage.class);
         PageFactory.initElements(getDr(), Sidebar.class);
         PageFactory.initElements(getDr(), ProductPage.class);
+        
         // Initialize Extent Report
         ExtentReportUtil.initializeReport();
     }
@@ -82,30 +82,28 @@ public class TestRunner extends AbstractTestNGCucumberTests {
                 logger(e);
             }
 
-            Class<?>[] classesToClear = {
-                LoginPage.class,
-                Sidebar.class,
-                ProductPage.class,
-                StepDef.class,
-                Waits.class,
-                Asserts.class,
-                DriverBase.class,
-                CommonUtils.class
-            };
+            /*get the list of all classes in the package & 
+            clear all static instances which are not final
+            This is a workaround to clear static instances in the classes*/
+
+            Reflections allClasses = new Reflections("base", "pages", "stepdefs", "commonutils");
+            Set<Class<?>> classesToClear = allClasses.getSubTypesOf(Object.class);
+
             for (Class<?> clazz : classesToClear) {
                 for (java.lang.reflect.Field field : clazz.getDeclaredFields()) {
                     if (java.lang.reflect.Modifier.isStatic(field.getModifiers()) &&
                         !java.lang.reflect.Modifier.isFinal(field.getModifiers())) {
                         field.setAccessible(true); // Make the field accessible
                         try {
-                            field.set(null, null); // Set the static field to null
+                            field.set(null, null);
+                            System.out.println("Static field '" + field.getName() + "' in class '" + clazz.getName() + "' set to null."); // Set the static field to null
                         } catch (IllegalAccessException e) {
                             logger(e);
                         }
                     }
                 }
             }
-            logger.info("All static instances have been cleared.");
+            System.out.println("All static instances cleared.");
         }
     }
 }

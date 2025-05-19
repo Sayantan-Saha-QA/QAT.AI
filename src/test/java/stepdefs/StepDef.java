@@ -47,7 +47,6 @@ public class StepDef{
                 for (String pass : passWord){
                     username.sendKeys(user);
                     password.sendKeys(pass);
-                    Thread.sleep(1000);
                     loginButton.click();
                     snap(user+pass);
                     

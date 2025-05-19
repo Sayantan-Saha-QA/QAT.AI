@@ -21,8 +21,13 @@ public class DriverBase {
             WebDriver webDriver = driverManager.createDriver();
 
             String url = getConfig("config","URL");
+            // Delete cookies and maximize window, but Safari does not support window maximize
             webDriver.manage().deleteAllCookies();
-            webDriver.manage().window().maximize();
+            if (!browser.equalsIgnoreCase("safari")) {
+                webDriver.manage().window().maximize();
+            } else {
+                logger.warn("Safari does not support window maximize operation.");
+            }
 
             if (url != null && !url.isEmpty()) {
                 webDriver.get(url);
