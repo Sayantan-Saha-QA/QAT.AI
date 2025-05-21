@@ -1,6 +1,7 @@
 commonutils/Waits.class
 commonutils/CommonUtils.class
 pages/ProductPage.class
+datamodels/LoginCredential.class
 commonutils/Asserts.class
 stepdefs/StepDef.class
 steps/Step.class

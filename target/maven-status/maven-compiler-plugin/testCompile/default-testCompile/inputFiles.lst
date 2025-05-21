@@ -3,6 +3,7 @@
 /Users/sayantansaha/Downloads/QAT.AI/src/test/commonutils/Asserts.java
 /Users/sayantansaha/Downloads/QAT.AI/src/test/steps/Step.java
 /Users/sayantansaha/Downloads/QAT.AI/src/test/pages/LoginPage.java
+/Users/sayantansaha/Downloads/QAT.AI/src/test/datamodels/LoginCredential.java
 /Users/sayantansaha/Downloads/QAT.AI/src/test/pages/ProductPage.java
 /Users/sayantansaha/Downloads/QAT.AI/src/test/commonutils/Waits.java
 /Users/sayantansaha/Downloads/QAT.AI/src/test/TestRunner.java

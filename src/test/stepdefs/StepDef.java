@@ -14,13 +14,14 @@ import static commonutils.Waits.*;
 
 import static commonutils.DatabaseUtil.*;
 
+import datamodels.LoginCredential;
 
 public class StepDef{
 
+    
     public static void launchPageTitle(){
 
         try{
-            
             createAndGetTest("Login Page Test");
             
             waitTitle("Swag Labs");
@@ -33,7 +34,7 @@ public class StepDef{
 
         snap("loginpage");
     }
-
+    
     public static void loginMethod(){
 
         try{
@@ -43,12 +44,17 @@ public class StepDef{
             String[] userName = getConfig("data", "USERNAME").split(",");
             String[] passWord = getConfig("data", "PASSWORD").split(",");
 
+            LoginCredential cred = new LoginCredential();
+
             for (String user : userName){
+                cred.setUsername(user);
                 for (String pass : passWord){
-                    username.sendKeys(user);
-                    password.sendKeys(pass);
+                    cred.setPassword(pass);
+                    
+                    username.sendKeys(cred.getUsername());
+                    password.sendKeys(cred.getPassword());
                     loginButton.click();
-                    snap(user+pass);
+                    snap(cred.getUsername()+cred.getPassword());
                     
                     if (!getDr().getCurrentUrl().contains("inventory.html")) {
                         clearText(username);
@@ -64,11 +70,10 @@ public class StepDef{
         snap("loggedin");
 
     }
-
+    
     public static void verifyProduct(){
 
         try{
-
             createAndGetTest("Login Page Test");
 
             waitTitle("Swag Labs");
@@ -101,7 +106,6 @@ public class StepDef{
                 snap(productName);
                 backToProducts.click();
             }
-            
             Thread.sleep(3000);
         }
         catch(Exception e){
