@@ -1,6 +1,7 @@
 base/SafariDriverManager.class
 base/DriverBase.class
 base/DriverManager.class
+base/Listener.class
 base/FirefoxDriverManager.class
 base/DriverManagerFactory.class
 base/ExtentReportUtil.class

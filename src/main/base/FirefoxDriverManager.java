@@ -9,6 +9,7 @@ public class FirefoxDriverManager implements DriverManager {
     public WebDriver createDriver() {
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--disable-extensions");
+        
         return new FirefoxDriver(options);
     }
 }

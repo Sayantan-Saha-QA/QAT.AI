@@ -1,6 +1,7 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.apache.logging.log4j.*;
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,6 +20,12 @@ public class DriverBase {
             }
             DriverManager driverManager = DriverManagerFactory.getManager(browser);
             WebDriver webDriver = driverManager.createDriver();
+
+            Listener listener = new Listener();
+            WebDriver decoratedDriver = new EventFiringDecorator<>(listener).decorate(webDriver);
+
+            // Store the decorated driver in ThreadLocal variable
+            driver.set(decoratedDriver);
 
             String url = getConfig("config","URL");
             // Delete cookies and maximize window, but Safari does not support window maximize

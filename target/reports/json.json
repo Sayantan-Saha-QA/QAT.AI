@@ -3,7 +3,7 @@
     "line": 4,
     "elements": [
       {
-        "start_timestamp": "2025-05-21T22:58:32.953Z",
+        "start_timestamp": "2025-05-23T22:59:04.224Z",
         "line": 6,
         "name": "Swag Labs Login",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 216126000,
+              "duration": 179739000,
               "status": "passed"
             },
             "line": 7,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 4893934000,
+              "duration": 4941114000,
               "status": "passed"
             },
             "line": 8,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 15018934000,
+              "duration": 14901423000,
               "status": "passed"
             },
             "line": 9,

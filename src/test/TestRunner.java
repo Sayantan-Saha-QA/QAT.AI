@@ -1,5 +1,7 @@
 import java.io.IOException;
 
+import static base.DriverBase.getDr;
+import static base.DriverBase.setUp;
 import static commonutils.Asserts.*;
 import static commonutils.CommonUtils.*;
 
