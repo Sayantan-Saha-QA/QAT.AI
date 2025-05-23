@@ -43,7 +43,7 @@ public class DriverBase {
                 logger.warn("No URL specified in config.properties.");
             }
 
-            driver.set(webDriver);
+            driver.set(decoratedDriver);
             logger.info("WebDriver initialized successfully.");
         } catch (Exception e) {
             logger.error("Exception occurred during WebDriver setup: {}", e.getMessage(), e);

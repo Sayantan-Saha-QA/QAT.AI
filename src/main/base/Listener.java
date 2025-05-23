@@ -15,12 +15,16 @@ public class Listener implements WebDriverListener {
     public void beforeClick(WebElement element) {
         logger.info("Clicking on element: {}", element);
         System.out.println("Clicking on element: " + element);
+        String stepName = "Click on element: " + element;
+        snap(stepName);
     }
 
     @Override
     public void afterClick(WebElement element) {
         logger.info("Clicked on element: {}", element);
         System.out.println("Clicked on element: " + element);
+        String stepName = "Clicked on element: " + element;
+        snap(stepName);
     }
 
     @Override

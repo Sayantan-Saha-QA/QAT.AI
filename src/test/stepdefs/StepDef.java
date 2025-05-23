@@ -31,8 +31,6 @@ public class StepDef{
         catch(Exception e){
             logger(e);
         }
-
-        snap("loginpage");
     }
     
     public static void loginMethod(){
@@ -66,9 +64,6 @@ public class StepDef{
         catch(Exception e){
             logger(e);
         }
-
-        snap("loggedin");
-
     }
     
     public static void verifyProduct(){
@@ -103,17 +98,13 @@ public class StepDef{
                 waitVisibility(backToProducts);
                 softAssertEquals(productDescription.getText(), productName);
 
-                snap(productName);
                 backToProducts.click();
             }
             Thread.sleep(3000);
         }
         catch(Exception e){
             logger(e);
-        }
-
-        snap("productpage");
-    
+        }    
     }
     
 }
