@@ -2,6 +2,9 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
+
+import listeners.Listener;
+
 import org.apache.logging.log4j.*;
 import java.io.File;
 import java.io.FileInputStream;

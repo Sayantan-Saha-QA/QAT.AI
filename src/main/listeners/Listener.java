@@ -1,10 +1,9 @@
-package base;
-
+package listeners;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.events.WebDriverListener;
 
-import static base.ExtentReportUtil.snap;
+import static reporting.ExtentReportUtil.*;
 
 import org.apache.logging.log4j.*;
 
@@ -25,6 +24,18 @@ public class Listener implements WebDriverListener {
         System.out.println("Clicked on element: " + element);
         String stepName = "Clicked on element: " + element;
         snap(stepName);
+    }
+
+    @Override
+    public void beforeIsSelected(WebElement element) {
+        logger.info("Checking if element is selected: {}", element);
+        System.out.println("Checking if element is selected: " + element);
+    }
+
+    @Override
+    public void afterIsSelected(WebElement element, boolean selected) {
+        logger.info("Element is selected: {} - {}", element, selected);
+        System.out.println("Element is selected: " + element + " - " + selected);
     }
 
     @Override

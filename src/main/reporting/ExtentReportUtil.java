@@ -1,8 +1,10 @@
-package base;
+package reporting;
+
 
 import static base.DriverBase.getDr;
 
 import java.io.IOException;
+import java.nio.file.StandardCopyOption;
 import java.io.File;
 
 import org.apache.commons.io.FileUtils;
@@ -53,7 +55,7 @@ public class ExtentReportUtil {
         File srcFile = ((TakesScreenshot) getDr()).getScreenshotAs(OutputType.FILE);
         String destPath = "screenshots/" + stepName + ".png";
         File destFile = new File(destPath);
-        FileUtils.copyFile(srcFile, destFile);
+        FileUtils.copyFile(srcFile, destFile, StandardCopyOption.REPLACE_EXISTING);
 
         // Attach the screenshot to the Extent Report
         ExtentReportUtil.getTest().info("Screenshot for step: " + stepName,
