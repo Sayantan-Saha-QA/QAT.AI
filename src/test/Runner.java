@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 
 import static base.DriverBase.getDr;
@@ -106,7 +104,7 @@ public class Runner extends AbstractTestNGCucumberTests {
     }
 
     @Test
-public void dummyTest() {
+    public void dummyTest() {
     // This method exists only to make Gradle recognize this class as a test
-}
+    }
 }

@@ -1,65 +1,151 @@
-# QAT.AI Workspace
+# QAT.AI – Intelligent Test Automation & SWE Artefact Generation Framework
 
-This repository contains the QAT.AI project, which is designed to streamline test automation and SWE artefacts generation. The workspace is structured to support modular development, testing, and automated SWE artefacts generation.
+QAT.AI is a modern, modular automation framework designed to accelerate software quality assurance and automate the generation of software engineering artefacts. Built with Java, Selenium, Cucumber (TestNG), and integrated with CI/CD pipelines, QAT.AI empowers teams to deliver robust, maintainable, and scalable test solutions for web applications and beyond.
 
 ---
 
 ## Table of Contents
+
+- [Overview](#overview)
 - [Project Structure](#project-structure)
+- [Key Features](#key-features)
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [Testing](#testing)
+- [Reporting](#reporting)
 - [Jenkins Integration](#jenkins-integration)
 - [License](#license)
 
 ---
 
+## Overview
+
+QAT.AI streamlines the process of test automation and artefact generation by providing:
+- Modular, reusable components for rapid test development
+- Integration with GitHub Copilot for prompt reuse and template management
+- Automated reporting with ExtentReports and Cucumber HTML reports
+- Seamless CI/CD integration using Jenkins
+- Support for data-driven and behavior-driven development (BDD)
+
+---
+
 ## Project Structure
-JenkinsFile # Jenkins pipeline configuration mvnw, mvnw.cmd # Maven wrapper scripts pom.xml # Maven project configuration README.md # Project documentation .mvn/ # Maven wrapper configuration .vscode/ # VS Code workspace settings qGen-HUB/ # Core modules for input, prompt library, and output src/ # Source code for main and test Java files target/ # Compiled classes, reports, and test outputs
 
+```
+.
+├── JenkinsFile                # Jenkins pipeline configuration
+├── build.gradle               # Gradle build configuration
+├── README.md                  # Project documentation
+├── product_names.json         # Sample data file
+├── src/
+│   ├── main/                  # Main Java source code
+│   └── test/                  # Test Java source code
+├── qGen-HUB/                  # Copilot prompt library and artefact generation modules
+│   ├── 1.Input/               # Input templates
+│   ├── 2.Prompt_Library/      # Reusable prompt logic
+│   └── 3.Output/              # Generated outputs (e.g., user stories)
+├── target/                    # Build artifacts, reports, and test outputs
+├── screenshots/               # Screenshots captured during test runs
+└── ...                        # Other supporting files and directories
+```
 
-### Key Directories:
-- qGen-HUB: Wrapper on top of GitHub Copilot: Reuse prompts, templates. This enables the user to scale up GitHub Copilot across use cases.
-- **qGen-HUB/1.Input/**: Contains input templates for output.
-- **qGen-HUB/2.Prompt_Library/**: Includes reusable prompt logic and context files.
-- **qGen-HUB/3.Output/**: Stores generated outputs like user stories
-- **src/main/java/**: Main Java source code.
-- **src/test/java/**: Test Java source code.
-- **target/**: Build artifacts, reports, and compiled classes.
+### Key Directories
 
--------------
+- **qGen-HUB/**: Wrapper on top of GitHub Copilot for prompt and template reuse.
+- **src/main/java/**: Main application source code.
+- **src/test/java/**: Test code (Cucumber, TestNG).
+- **target/**: Compiled classes, reports, and test outputs.
+- **screenshots/**: Screenshots from automated test executions.
+
+---
+
+## Key Features
+
+- **Java 17+**: Modern language features and performance.
+- **Selenium WebDriver**: Cross-browser web automation.
+- **Cucumber + TestNG**: BDD and data-driven testing.
+- **ExtentReports & Cucumber HTML Reports**: Rich, interactive test reporting.
+- **Jenkins Integration**: Automated CI/CD pipelines.
+- **Reusable Prompt Library**: Scale up Copilot usage for SWE artefact generation.
+- **Database Integration**: MySQL connector for data-driven tests.
+- **Utilities**: Logging, JSON handling, and more.
+
+---
 
 ## Prerequisites
 
-- **Java 24**: Ensure Java 24 is installed and configured.
-- **Maven**: Use the Maven wrapper (`mvnw`) included in the repository.
-- **Jenkins**: For CI/CD integration.
+- **Java 24** (or Java 17+): Ensure Java is installed and configured.
+- **Gradle**: Use the included Gradle wrapper (`./gradlew`).
+- **Jenkins**: For CI/CD integration (optional).
 
 ---
 
 ## Setup Instructions
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```sh
    git clone https://github.com/S-Saha-GenAI-Consulting/QAT.AI.git
    cd QAT.AI
+   ```
 
-2. Ensure Java 24 is installed: java -version
+2. **Ensure Java is installed:**
+   ```sh
+   java -version
+   ```
 
-3. Build the project using Maven: ./mvnw clean install
+3. **Build the project using Gradle:**
+   ```sh
+   ./gradlew clean build
+   ```
 
-4. Testing
-Running Tests
-Execute all tests using Maven: mvnw clean test
+---
 
-5. Jenkins Integration
-This project includes a JenkinsFile for CI/CD automation. To set up Jenkins:
+## Usage
 
-* Configure a Jenkins job to pull this repository.
+- **Run tests locally:**
+  ```sh
+  ./gradlew test
+  ```
 
-* Ensure the JAVA_HOME environment variable is set to Java 24.
+- **View reports:**
+  - Open `target/ExtentReport.html` for ExtentReports.
+  - Open `target/reports/html.html` for Cucumber HTML reports.
 
-* Run command on terminal: brew services start jenkins-lts
+- **Customize configuration:**
+  - Edit `src/config.properties` and `src/data.properties` as needed.
 
-* Trigger the pipeline to build and test the project.
+---
+
+## Testing
+
+- Tests are written using Cucumber and TestNG.
+- Feature files and step definitions are located in `src/test/java/`.
+- Test results and logs are available in the `target/` and `build/` directories.
+
+---
+
+## Reporting
+
+- **ExtentReports**: Rich HTML reports at `target/ExtentReport.html`
+- **Cucumber HTML**: BDD-style reports at `target/reports/html.html`
+- **Screenshots**: Captured during test failures in the `screenshots/` directory.
+
+---
+
+## Jenkins Integration
+
+- The included `JenkinsFile` enables CI/CD automation.
+- To set up Jenkins:
+  1. Configure a Jenkins job to pull this repository.
+  2. Ensure `JAVA_HOME` is set to Java 24 (or compatible version).
+  3. Start Jenkins (e.g., `brew services start jenkins-lts` on macOS).
+  4. Trigger the pipeline to build and test the project.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
