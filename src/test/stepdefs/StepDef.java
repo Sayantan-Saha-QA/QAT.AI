@@ -21,7 +21,6 @@ import listeners.TestNGListener;
 
 @Listeners(TestNGListener.class)
 public class StepDef{
-
     
     public static void launchPageTitle(){
 
