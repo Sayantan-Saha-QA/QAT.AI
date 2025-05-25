@@ -62,7 +62,7 @@ QAT.AI streamlines the process of test automation and artefact generation by pro
 
 ## Key Features
 
-- **Java 17+**: Modern language features and performance.
+- **Java 24**: Modern language features and performance.
 - **Selenium WebDriver**: Cross-browser web automation.
 - **Cucumber + TestNG**: BDD and data-driven testing.
 - **ExtentReports & Cucumber HTML Reports**: Rich, interactive test reporting.

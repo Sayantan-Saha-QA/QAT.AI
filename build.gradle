@@ -5,14 +5,14 @@ plugins {
 group = 'com.selenium_automation'
 version = '1.0'
 
-sourceCompatibility = '17'
-targetCompatibility = '17'
+java {
+    sourceCompatibility = JavaVersion.VERSION_24
+    targetCompatibility = JavaVersion.VERSION_24
+}
 
 repositories {
     mavenCentral()
     maven { url 'https://repo1.maven.org/maven2/' }
-    // If you still face issues, uncomment the next line:
-    // maven { url 'https://jcenter.bintray.com/' }
 }
 
 ext {
@@ -24,14 +24,6 @@ dependencies {
     // Cucumber
     implementation "io.cucumber:cucumber-java:${cucumberVersion}"
     implementation "io.cucumber:cucumber-testng:${cucumberVersion}"
-
-    // Lombok
-    compileOnly 'org.projectlombok:lombok:1.18.28'
-    annotationProcessor 'org.projectlombok:lombok:1.18.28'
-    compileOnly 'org.projectlombok:lombok:1.18.28'
-    annotationProcessor 'org.projectlombok:lombok:1.18.28'
-    testCompileOnly 'org.projectlombok:lombok:1.18.28'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
 
     // Extent Reports
     implementation 'com.aventstack:extentreports:5.0.9'

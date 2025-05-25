@@ -21,13 +21,25 @@ pipeline {
                 '''
             }
         }
-        stage('Run Test') {
+        stage('Run Tests') {
             steps {
                 sh '''
-                chmod +x ./mvnw
-                ./mvnw clean test
+                chmod +x ./gradlew
+                ./gradlew clean build --stacktrace
                 '''
             }
+        }
+        stage('Archive Reports') {
+            steps {
+                archiveArtifacts artifacts: 'target/ExtentReport.html', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'target/reports/html.html', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'build/reports/tests/test/index.html', allowEmptyArchive: true
+            }
+        }
+    }
+    post {
+        always {
+            junit 'build/test-results/test/*.xml'
         }
     }
 }
