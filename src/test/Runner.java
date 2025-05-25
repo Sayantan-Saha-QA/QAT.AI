@@ -32,7 +32,7 @@ import commonutils.*;
     dryRun = false, // Set to true to check if all steps have definitions without executing them
     tags = "@Swag_Labs" // Executes scenarios with this tag
 )
-public class RunnerTest extends AbstractTestNGCucumberTests {
+public class Runner extends AbstractTestNGCucumberTests {
 
     static {
         DriverManagerFactory.register("safari", SafariDriverManager.class);

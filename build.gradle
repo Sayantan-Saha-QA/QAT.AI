@@ -74,7 +74,7 @@ dependencies {
 
 test {
     useTestNG()
-    include '**/RunnerTest.class'
+    include '**/Runner.class'
     testLogging {
         events "passed", "skipped", "failed"
     }
