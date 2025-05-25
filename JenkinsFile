@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    stages {
+
+        stage('Clean Workspace') {
+            steps {
+                deleteDir()
+            }
+        }
+        
+        stage('Checkout SCM') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Debug Checkout') {
+            steps {
+                sh '''
+                echo "Debugging repository contents:"
+                ls -la
+                '''
+            }
+        }
+        stage('Run Test') {
+            steps {
+                sh '''
+                chmod +x ./mvnw
+                ./mvnw clean test
+                '''
+            }
+        }
+    }
+}

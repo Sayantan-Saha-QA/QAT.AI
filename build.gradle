@@ -1,0 +1,95 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.selenium_automation'
+version = '1.0'
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo1.maven.org/maven2/' }
+    // If you still face issues, uncomment the next line:
+    // maven { url 'https://jcenter.bintray.com/' }
+}
+
+ext {
+    cucumberVersion = '7.11.0'
+    springVersion = '5.3.30'
+}
+
+dependencies {
+    // Cucumber
+    implementation "io.cucumber:cucumber-java:${cucumberVersion}"
+    implementation "io.cucumber:cucumber-testng:${cucumberVersion}"
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testCompileOnly 'org.projectlombok:lombok:1.18.28'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    // Extent Reports
+    implementation 'com.aventstack:extentreports:5.0.9'
+
+    // Logging
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    implementation 'org.apache.logging.log4j:log4j-api:2.20.0'
+
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.32.0'
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.11.0'
+
+    // JUnit
+    testImplementation 'junit:junit:4.13.2'
+
+    // Apache Commons Lang
+    implementation 'org.apache.commons:commons-lang3:3.9'
+
+    // MySQL Connector
+    implementation 'mysql:mysql-connector-java:8.0.33'
+
+    // Jansi
+    implementation 'org.fusesource.jansi:jansi:2.4.0'
+
+    // Commons IO
+    implementation 'commons-io:commons-io:2.11.0'
+
+    // Guava
+    implementation 'com.google.guava:guava:32.1.2-jre'
+
+    // Reflections
+    implementation 'org.reflections:reflections:0.10.2'
+
+    // JSON
+    implementation 'org.json:json:20230227'
+}
+
+test {
+    useTestNG()
+    include '**/RunnerTest.class'
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+    jvmArgs '--enable-native-access=ALL-UNNAMED'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test']
+        }
+    }
+}
