@@ -1,6 +1,5 @@
 package reporting;
 
-
 import static base.DriverBase.getDr;
 
 import java.io.IOException;

@@ -32,21 +32,20 @@ public class DriverBase {
 
             String url = getConfig("config","URL");
             // Delete cookies and maximize window, but Safari does not support window maximize
-            webDriver.manage().deleteAllCookies();
+            decoratedDriver.manage().deleteAllCookies();
             if (!browser.equalsIgnoreCase("safari")) {
-                webDriver.manage().window().maximize();
+                decoratedDriver.manage().window().maximize();
             } else {
                 logger.warn("Safari does not support window maximize operation.");
             }
 
             if (url != null && !url.isEmpty()) {
-                webDriver.get(url);
+                decoratedDriver.get(url);
                 logger.info("Navigated to URL: {}", url);
             } else {
                 logger.warn("No URL specified in config.properties.");
             }
 
-            driver.set(decoratedDriver);
             logger.info("WebDriver initialized successfully.");
         } catch (Exception e) {
             logger.error("Exception occurred during WebDriver setup: {}", e.getMessage(), e);
