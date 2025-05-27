@@ -16,8 +16,7 @@ repositories {
 }
 
 ext {
-    cucumberVersion = '7.11.0'
-    springVersion = '5.3.30'
+    cucumberVersion = '7.22.0'
 }
 
 dependencies {
@@ -34,7 +33,7 @@ dependencies {
     implementation 'org.apache.logging.log4j:log4j-api:2.20.0'
 
     // Selenium
-    implementation 'org.seleniumhq.selenium:selenium-java:4.32.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.33.0'
 
     // TestNG
     testImplementation 'org.testng:testng:7.11.0'
@@ -53,9 +52,6 @@ dependencies {
 
     // Commons IO
     implementation 'commons-io:commons-io:2.11.0'
-
-    // Guava
-    implementation 'com.google.guava:guava:32.1.2-jre'
 
     // Reflections
     implementation 'org.reflections:reflections:0.10.2'

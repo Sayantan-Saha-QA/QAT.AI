@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-27T22:12:10.145Z" hostname="Sayantans-MacBook-Air.local" time="19.055">
+<testsuite name="Runner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-27T22:26:33.682Z" hostname="Sayantans-MacBook-Air.local" time="19.077">
   <properties/>
   <testcase name="dummyTest" classname="Runner" time="0.001"/>
-  <testcase name="runScenario[0](&quot;Swag Labs Login&quot;, &quot;Swag Labs Login&quot;)" classname="Runner" time="19.051"/>
+  <testcase name="runScenario[0](&quot;Swag Labs Login&quot;, &quot;Swag Labs Login&quot;)" classname="Runner" time="19.073"/>
   <system-out><![CDATA[Navigating to URL: https://www.saucedemo.com
 Navigated to URL: https://www.saucedemo.com
 
@@ -11,195 +11,195 @@ Scenario: Swag Labs Login                                        # src/test/feat
 Page title is: Swag Labs
   Given user is on the Swag Labs login page                      # steps.Step.getloginTitle()
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name] - Keys: abcd
-Sent keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name] - Keys: abcd
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: abcd
+Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: abcd
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password] - Keys: 1234
-Sent keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password] - Keys: 1234
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: 1234
+Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: 1234
 Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]
+Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name] - Keys: abcd
-Sent keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name] - Keys: abcd
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: abcd
+Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: abcd
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password] - Keys: secret_sauce
-Sent keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password] - Keys: secret_sauce
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: secret_sauce
+Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: secret_sauce
 Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]
+Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name] - Keys: standard_user
-Sent keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name] - Keys: standard_user
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: standard_user
+Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: standard_user
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password] - Keys: 1234
-Sent keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password] - Keys: 1234
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: 1234
+Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: 1234
 Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]
+Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name] - Keys: standard_user
-Sent keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: user-name] - Keys: standard_user
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: standard_user
+Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: standard_user
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password] - Keys: secret_sauce
-Sent keys to element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: password] - Keys: secret_sauce
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: secret_sauce
+Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: secret_sauce
 Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: login-button]
+Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
   When user enters valid credentials and clicks login button     # steps.Step.login()
 Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> class name: product_sort_container]}
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]}
 Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> class name: product_sort_container]}
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]}
 Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> class name: product_sort_container]}
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]}
 Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> class name: product_sort_container]}
-Checking if element is selected: [[[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Element is selected: [[[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]] - false
-Clicking on element: [[[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Clicked on element: [[[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]}
+Checking if element is selected: [[[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Element is selected: [[[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]] - false
+Clicking on element: [[[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Clicked on element: [[[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
 Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Backpack']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Backpack']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Backpack']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Backpack']]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Backpack']]
+Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]
 Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Backpack']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Inserted product: Sauce Labs Backpack into the database.
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
 Finding element by: By.xpath: //*[text()='Sauce Labs Bike Light']
-Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Bike Light']
-Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Bike Light']
-Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bike Light']]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bike Light']]
+Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]
 Finding element by: By.xpath: //*[text()='Sauce Labs Bike Light']
-Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Inserted product: Sauce Labs Bike Light into the database.
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
 Finding element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt']
-Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt']
-Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt']
-Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]
+Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]
 Finding element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt']
-Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Inserted product: Sauce Labs Bolt T-Shirt into the database.
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
 Finding element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket']
-Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket']
-Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket']
-Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]
+Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]
 Finding element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket']
-Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Inserted product: Sauce Labs Fleece Jacket into the database.
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
 Finding element by: By.xpath: //*[text()='Sauce Labs Onesie']
-Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Onesie']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Onesie']
-Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Onesie']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Onesie']
-Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Onesie']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Onesie']]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Onesie']]
+Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]
 Finding element by: By.xpath: //*[text()='Sauce Labs Onesie']
-Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: //*[text()='Sauce Labs Onesie']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Inserted product: Sauce Labs Onesie into the database.
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
 Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (3be33bd2-fec9-4b98-beb9-9d1789d81d03)] -> id: back-to-products]
+Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
+Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
+Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
   Then user should be redirected to the Swag Labs inventory page # steps.Step.verifyProductPage()
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
