@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-27T22:26:33.682Z" hostname="Sayantans-MacBook-Air.local" time="19.077">
+<testsuite name="Runner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-31T11:25:40.645Z" hostname="Sayantans-MacBook-Air.local" time="11.631">
   <properties/>
   <testcase name="dummyTest" classname="Runner" time="0.001"/>
-  <testcase name="runScenario[0](&quot;Swag Labs Login&quot;, &quot;Swag Labs Login&quot;)" classname="Runner" time="19.073"/>
+  <testcase name="runScenario[0](&quot;Swag Labs Login&quot;, &quot;Swag Labs Login&quot;)" classname="Runner" time="11.626"/>
   <system-out><![CDATA[Navigating to URL: https://www.saucedemo.com
 Navigated to URL: https://www.saucedemo.com
 
@@ -11,196 +11,334 @@ Scenario: Swag Labs Login                                        # src/test/feat
 Page title is: Swag Labs
   Given user is on the Swag Labs login page                      # steps.Step.getloginTitle()
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: abcd
-Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: abcd
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: abcd
+Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: abcd
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: 1234
-Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: 1234
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: 1234
+Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: 1234
 Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
+Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]}
+Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: abcd
-Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: abcd
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: abcd
+Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: abcd
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: secret_sauce
-Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: secret_sauce
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: secret_sauce
+Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: secret_sauce
 Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
+Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]}
+Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: standard_user
-Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: standard_user
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: standard_user
+Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: standard_user
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: 1234
-Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: 1234
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: 1234
+Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: 1234
 Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
+Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]}
+Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
 Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: standard_user
-Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: user-name] - Keys: standard_user
+Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: standard_user
+Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: standard_user
 Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: secret_sauce
-Sent keys to element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: password] - Keys: secret_sauce
+Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
+Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: secret_sauce
+Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: secret_sauce
 Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: login-button]
+Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]}
+Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
   When user enters valid credentials and clicks login button     # steps.Step.login()
 Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]}
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
 Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]}
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
 Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]}
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
+Name (A to Z)
+Name (Z to A)
+Price (low to high)
+Price (high to low)
 Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]}
-Checking if element is selected: [[[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Element is selected: [[[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]] - false
-Clicking on element: [[[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Clicked on element: [[[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
+Finding element by: By.className: product_sort_container
+Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
+Checking if element is selected: [[[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Element is selected: [[[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]] - false
+Clicking on element: [[[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Clicked on element: [[[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
 Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]}
 Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]
+Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]}
+Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]
+Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]
 Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Backpack']]}
+Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]}
 Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Inserted product: Sauce Labs Backpack into the database.
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Finding element by: By.xpath: //*[text()='Sauce Labs Bike Light']
-Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Bike Light']
-Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Bike Light']
-Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]
-Finding element by: By.xpath: //*[text()='Sauce Labs Bike Light']
-Found element by: By.xpath: //*[text()='Sauce Labs Bike Light'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bike Light']]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Inserted product: Sauce Labs Bike Light into the database.
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Finding element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt']
-Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt']
-Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt']
-Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]
-Finding element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt']
-Found element by: By.xpath: //*[text()='Sauce Labs Bolt T-Shirt'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Bolt T-Shirt']]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Inserted product: Sauce Labs Bolt T-Shirt into the database.
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Finding element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket']
-Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket']
-Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket']
-Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]
-Finding element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket']
-Found element by: By.xpath: //*[text()='Sauce Labs Fleece Jacket'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Fleece Jacket']]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Inserted product: Sauce Labs Fleece Jacket into the database.
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Finding element by: By.xpath: //*[text()='Sauce Labs Onesie']
-Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Onesie']
-Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Onesie']
-Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]
-Finding element by: By.xpath: //*[text()='Sauce Labs Onesie']
-Found element by: By.xpath: //*[text()='Sauce Labs Onesie'] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: //*[text()='Sauce Labs Onesie']]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Inserted product: Sauce Labs Onesie into the database.
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-Finding element by: By.id: back-to-products
-Found element by: By.id: back-to-products - Element: Decorated {[[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]}
-Clicking on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
-Clicked on element: [[FirefoxDriver: firefox on mac (b891aa48-8a16-4d05-9f40-3871c465bfe8)] -> id: back-to-products]
+Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
+16:55:52.265 [Test worker] ERROR commonutils.CommonUtils - Exception occurred: Failed to insert product name into the database.
+java.lang.RuntimeException: Failed to insert product name into the database.
+	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:47) ~[test/:?]
+	at stepdefs.StepDef.verifyProduct(StepDef.java:106) [test/:?]
+	at steps.Step.verifyProductPage(Step.java:31) [test/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) [cucumber-java-7.22.0.jar:7.22.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) [cucumber-java-7.22.0.jar:7.22.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) [cucumber-java-7.22.0.jar:7.22.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) [cucumber-java-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:86) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135) [cucumber-testng-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136) [cucumber-core-7.22.0.jar:7.22.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132) [cucumber-testng-7.22.0.jar:7.22.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) [cucumber-testng-7.22.0.jar:7.22.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) [testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) [testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.11.0.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153) [gradle-testing-jvm-infrastructure-8.14.1.jar:8.14.1]
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95) [gradle-testing-jvm-infrastructure-8.14.1.jar:8.14.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63) [gradle-testing-base-infrastructure-8.14.1.jar:8.14.1]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-8.14.1.jar:8.14.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-8.14.1.jar:8.14.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-8.14.1.jar:8.14.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) [gradle-messaging-8.14.1.jar:8.14.1]
+	at jdk.proxy1.$Proxy4.stop(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200) [gradle-testing-base-infrastructure-8.14.1.jar:8.14.1]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) [gradle-testing-base-infrastructure-8.14.1.jar:8.14.1]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) [gradle-testing-base-infrastructure-8.14.1.jar:8.14.1]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) [gradle-testing-base-infrastructure-8.14.1.jar:8.14.1]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) [gradle-worker-main-8.14.1.jar:8.14.1]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122) [gradle-worker-main-8.14.1.jar:8.14.1]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72) [gradle-worker-main-8.14.1.jar:8.14.1]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) [gradle-worker.jar:?]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) [gradle-worker.jar:?]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at java.sql.DriverManager.getConnection(DriverManager.java:613) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:199) ~[java.sql:?]
+	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26) ~[test/:?]
+	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33) ~[test/:?]
+	... 64 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at java.sql.DriverManager.getConnection(DriverManager.java:613) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:199) ~[java.sql:?]
+	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26) ~[test/:?]
+	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33) ~[test/:?]
+	... 64 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:535) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:524) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:574) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:282) ~[?:?]
+	at java.net.Socket.connect(Socket.java:665) ~[?:?]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at java.sql.DriverManager.getConnection(DriverManager.java:613) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:199) ~[java.sql:?]
+	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26) ~[test/:?]
+	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33) ~[test/:?]
+	... 64 more
   Then user should be redirected to the Swag Labs inventory page # steps.Step.verifyProductPage()
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
+	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26)
+	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33)
+	at stepdefs.StepDef.verifyProduct(StepDef.java:106)
+	at steps.Step.verifyProductPage(Step.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	... 71 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:535)
+	at java.base/sun.nio.ch.Net.connect(Net.java:524)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:574)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:282)
+	at java.base/java.net.Socket.connect(Socket.java:665)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 74 more
+]]></system-err>
 </testsuite>

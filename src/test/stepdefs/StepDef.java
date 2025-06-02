@@ -6,10 +6,14 @@ import org.openqa.selenium.WebElement;
 
 import static base.DriverBase.*;
 import static reporting.ExtentReportUtil.*;
+
+import java.util.List;
+
 import static pages.LoginPage.*;
 import static pages.ProductPage.*;
 import static commonutils.Asserts.*;
 import static commonutils.CommonUtils.*;
+import static commonutils.CommonUtils.getConfig;
 import static commonutils.Waits.*;
 
 import static commonutils.DatabaseUtil.*;
@@ -75,7 +79,14 @@ public class StepDef{
             softAssertEquals(getDr().getTitle(), "Swag Labs");
             Thread.sleep(3000);
             
-            new Select(sortBy).selectByVisibleText("Price (high to low)");
+            // Assuming 'sortBy' is your dropdown WebElement
+            Select dropdown = new Select(sortBy);
+            List<WebElement> options = dropdown.getOptions();
+            for (WebElement option : options) {
+                System.out.println(option.getText());
+            }
+
+            dropdown.selectByVisibleText("Price (high to low)");
             Thread.sleep(3000);
 
             WebElement[] productsToCheck = {

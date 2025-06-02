@@ -21,7 +21,7 @@ public class DriverBase {
             if (browser == null) {
                 throw new IllegalArgumentException("No browser specified. Please set 'browser' in config.properties or as a system property.");
             }
-            DriverManager driverManager = DriverManagerFactory.getManager(browser);
+            DriverManager driverManager = DriverManagerFactory.getBrowser(browser);
             WebDriver webDriver = driverManager.createDriver();
 
             Listener listener = new Listener();

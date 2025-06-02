@@ -56,7 +56,10 @@ dependencies {
     // Reflections
     implementation 'org.reflections:reflections:0.10.2'
 
-    // JSON
+    //json
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.2'
     implementation 'org.json:json:20230227'
 }
 
@@ -65,7 +68,9 @@ test {
     include '**/Runner.class'
     testLogging {
         events "passed", "skipped", "failed"
+        showStandardStreams = true
     }
+
     jvmArgs '--enable-native-access=ALL-UNNAMED'
 }
 

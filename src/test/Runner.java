@@ -33,8 +33,8 @@ import commonutils.*;
 public class Runner extends AbstractTestNGCucumberTests {
 
     static {
-        DriverManagerFactory.register("safari", SafariDriverManager.class);
-        DriverManagerFactory.register("firefox", FirefoxDriverManager.class);
+        DriverManagerFactory.setBrowser("chrome", ChromeDriverManager.class);
+        DriverManagerFactory.setBrowser("firefox", FirefoxDriverManager.class);
         // Register more browsers here, no need to edit setUp()!
     }
 
