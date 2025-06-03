@@ -56,8 +56,9 @@ public class Runner extends AbstractTestNGCucumberTests {
             softAssert.assertAll();
         } catch (AssertionError e) {
             // Log soft assertion failure in Extent Report
-            ExtentReportUtil.createAndGetTest("Soft Assertion Failure").fail("Soft assertion failed: " + e.getMessage());
-            throw e;
+          ExtentReportUtil.createTest("Soft Assertion Failure")
+          .fail("Soft assertion(s) failed: " + e.getMessage());            
+          throw e;
         } finally {
             CommonUtils.tearDown();
             ExtentReportUtil.flushReport();

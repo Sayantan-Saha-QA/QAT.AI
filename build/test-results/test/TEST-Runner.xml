@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-31T11:25:40.645Z" hostname="Sayantans-MacBook-Air.local" time="11.631">
+<testsuite name="Runner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T22:47:21.060Z" hostname="Sayantans-MacBook-Air.local" time="11.533">
   <properties/>
-  <testcase name="dummyTest" classname="Runner" time="0.001"/>
-  <testcase name="runScenario[0](&quot;Swag Labs Login&quot;, &quot;Swag Labs Login&quot;)" classname="Runner" time="11.626"/>
+  <testcase name="dummyTest" classname="Runner" time="0.0"/>
+  <testcase name="runScenario[0](&quot;Swag Labs Login&quot;, &quot;Swag Labs Login&quot;)" classname="Runner" time="11.528"/>
   <system-out><![CDATA[Navigating to URL: https://www.saucedemo.com
 Navigated to URL: https://www.saucedemo.com
 
@@ -10,114 +10,46 @@ Navigated to URL: https://www.saucedemo.com
 Scenario: Swag Labs Login                                        # src/test/features/Feature.feature:6
 Page title is: Swag Labs
   Given user is on the Swag Labs login page                      # steps.Step.getloginTitle()
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: abcd
-Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: abcd
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: 1234
-Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: 1234
-Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: abcd
-Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: abcd
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: secret_sauce
-Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: secret_sauce
-Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: standard_user
-Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: standard_user
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: 1234
-Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: 1234
-Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Finding element by: By.id: user-name
-Found element by: By.id: user-name - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: standard_user
-Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: user-name] - Keys: standard_user
-Finding element by: By.id: password
-Found element by: By.id: password - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password]}
-Sending keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: secret_sauce
-Sent keys to element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: password] - Keys: secret_sauce
-Finding element by: By.id: login-button
-Found element by: By.id: login-button - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]}
-Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> id: login-button]
+Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: abcd
+Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: abcd
+Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: 1234
+Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: 1234
+Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
+Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: abcd
+Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: abcd
+Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: secret_sauce
+Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: secret_sauce
+Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
+Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: standard_user
+Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: standard_user
+Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: 1234
+Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: 1234
+Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
+Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: standard_user
+Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: standard_user
+Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: secret_sauce
+Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: secret_sauce
+Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
   When user enters valid credentials and clicks login button     # steps.Step.login()
-Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
-Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
-Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
 Name (A to Z)
 Name (Z to A)
 Price (low to high)
 Price (high to low)
-Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
-Finding element by: By.className: product_sort_container
-Found element by: By.className: product_sort_container - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]}
-Checking if element is selected: [[[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Element is selected: [[[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]] - false
-Clicking on element: [[[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Clicked on element: [[[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]}
-Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]}
-Clicking on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]
-Clicked on element: [[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]
-Finding element by: By.xpath: //*[text()='Sauce Labs Backpack']
-Found element by: By.xpath: //*[text()='Sauce Labs Backpack'] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: //*[text()='Sauce Labs Backpack']]}
-Finding element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]
-Found element by: By.xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1] - Element: Decorated {[[FirefoxDriver: firefox on mac (ee835ce1-e15f-4d10-9b25-08a7a1987789)] -> xpath: /html/body/div/div/div/div[2]/div/div/div[2]/div[1]]}
-16:55:52.265 [Test worker] ERROR commonutils.CommonUtils - Exception occurred: Failed to insert product name into the database.
+Checking if element is selected: [[[[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Element is selected: [[[[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]] - false
+Clicking on element: [[[[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Clicked on element: [[[[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> xpath: //*[text()='Sauce Labs Backpack']]
+Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> xpath: //*[text()='Sauce Labs Backpack']]
+04:17:32.581 [Test worker] ERROR commonutils.CommonUtils - Exception occurred: Failed to insert product name into the database.
 java.lang.RuntimeException: Failed to insert product name into the database.
 	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:47) ~[test/:?]
-	at stepdefs.StepDef.verifyProduct(StepDef.java:106) [test/:?]
-	at steps.Step.verifyProductPage(Step.java:31) [test/:?]
+	at stepdefs.StepDef.verifyProduct(StepDef.java:101) [test/:?]
+	at steps.Step.verifyProductPage(Step.java:35) [test/:?]
 	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) [cucumber-java-7.22.0.jar:7.22.0]
@@ -251,8 +183,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
 	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26)
 	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33)
-	at stepdefs.StepDef.verifyProduct(StepDef.java:106)
-	at steps.Step.verifyProductPage(Step.java:31)
+	at stepdefs.StepDef.verifyProduct(StepDef.java:101)
+	at steps.Step.verifyProductPage(Step.java:35)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)

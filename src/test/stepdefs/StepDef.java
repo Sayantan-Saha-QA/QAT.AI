@@ -1,11 +1,11 @@
 package stepdefs;
 
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import org.openqa.selenium.WebElement;
 
 import static base.DriverBase.*;
-import static reporting.ExtentReportUtil.*;
 
 import java.util.List;
 
@@ -22,6 +22,7 @@ import datamodels.LoginCredential;
 
 import org.testng.annotations.Listeners;
 import listeners.TestNGListener;
+import pages.ProductPage;
 
 @Listeners(TestNGListener.class)
 public class StepDef{
@@ -29,7 +30,6 @@ public class StepDef{
     public static void launchPageTitle(){
 
         try{
-            createAndGetTest("Login Page Test");
             waitTitle("Swag Labs");
             System.out.println("Page title is: " + getDr().getTitle());
             softAssertEquals(getDr().getTitle(), "Swag Labs");
@@ -42,7 +42,6 @@ public class StepDef{
     public static void loginMethod(){
 
         try{
-            createAndGetTest("Login Page Test");
             //test random credentials can be entered and deleted
             String[] userName = getConfig("data", "USERNAME").split(",");
             String[] passWord = getConfig("data", "PASSWORD").split(",");
@@ -57,7 +56,6 @@ public class StepDef{
                     username.sendKeys(cred.getUsername());
                     password.sendKeys(cred.getPassword());
                     loginButton.click();
-                    snap(cred.getUsername()+cred.getPassword());
                     
                     if (!getDr().getCurrentUrl().contains("inventory.html")) {
                         clearText(username);
@@ -74,7 +72,6 @@ public class StepDef{
     public static void verifyProduct(){
 
         try{
-            createAndGetTest("Login Page Test");
             waitTitle("Swag Labs");
             softAssertEquals(getDr().getTitle(), "Swag Labs");
             Thread.sleep(3000);
@@ -98,6 +95,7 @@ public class StepDef{
             };
 
             for ( WebElement product : productsToCheck) {
+                PageFactory.initElements(getDr(), ProductPage.class);
                 scrollAction(product);
                 product.click();
                 String productName = product.getText();
