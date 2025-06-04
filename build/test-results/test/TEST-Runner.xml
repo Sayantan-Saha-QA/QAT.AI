@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T22:47:21.060Z" hostname="Sayantans-MacBook-Air.local" time="11.533">
+<testsuite name="Runner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-04T20:32:45.619Z" hostname="Sayantans-MacBook-Air.local" time="11.365">
   <properties/>
-  <testcase name="dummyTest" classname="Runner" time="0.0"/>
-  <testcase name="runScenario[0](&quot;Swag Labs Login&quot;, &quot;Swag Labs Login&quot;)" classname="Runner" time="11.528"/>
+  <testcase name="dummyTest" classname="Runner" time="0.001"/>
+  <testcase name="runScenario[0](&quot;Swag Labs Login&quot;, &quot;Swag Labs Login&quot;)" classname="Runner" time="11.359"/>
   <system-out><![CDATA[Navigating to URL: https://www.saucedemo.com
 Navigated to URL: https://www.saucedemo.com
 
@@ -10,45 +10,77 @@ Navigated to URL: https://www.saucedemo.com
 Scenario: Swag Labs Login                                        # src/test/features/Feature.feature:6
 Page title is: Swag Labs
   Given user is on the Swag Labs login page                      # steps.Step.getloginTitle()
-Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: abcd
-Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: abcd
-Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: 1234
-Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: 1234
-Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
-Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: abcd
-Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: abcd
-Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: secret_sauce
-Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: secret_sauce
-Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
-Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: standard_user
-Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: standard_user
-Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: 1234
-Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: 1234
-Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
-Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: standard_user
-Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: user-name] - Keys: standard_user
-Sending keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: secret_sauce
-Sent keys to element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: password] - Keys: secret_sauce
-Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
-Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> id: login-button]
+Sending keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: user-name] - Keys: abcd
+Sent keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: user-name] - Keys: abcd
+Sending keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: password] - Keys: 1234
+Sent keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: password] - Keys: 1234
+Clicking on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: login-button]
+Sending keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: user-name] - Keys: abcd
+Sent keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: user-name] - Keys: abcd
+Sending keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: password] - Keys: secret_sauce
+Sent keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: password] - Keys: secret_sauce
+Clicking on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: login-button]
+Sending keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: user-name] - Keys: standard_user
+Sent keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: user-name] - Keys: standard_user
+Sending keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: password] - Keys: 1234
+Sent keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: password] - Keys: 1234
+Clicking on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: login-button]
+Sending keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: user-name] - Keys: standard_user
+Sent keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: user-name] - Keys: standard_user
+Sending keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: password] - Keys: secret_sauce
+Sent keys to element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: password] - Keys: secret_sauce
+Clicking on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: login-button]
+Clicked on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> id: login-button]
   When user enters valid credentials and clicks login button     # steps.Step.login()
 Name (A to Z)
 Name (Z to A)
 Price (low to high)
 Price (high to low)
-Checking if element is selected: [[[[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Element is selected: [[[[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]] - false
-Clicking on element: [[[[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Clicked on element: [[[[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
-Clicking on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> xpath: //*[text()='Sauce Labs Backpack']]
-Clicked on element: [[FirefoxDriver: firefox on mac (c4c87635-0700-4055-9eb5-3ceac69cc638)] -> xpath: //*[text()='Sauce Labs Backpack']]
-04:17:32.581 [Test worker] ERROR commonutils.CommonUtils - Exception occurred: Failed to insert product name into the database.
-java.lang.RuntimeException: Failed to insert product name into the database.
-	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:47) ~[test/:?]
-	at stepdefs.StepDef.verifyProduct(StepDef.java:101) [test/:?]
+Checking if element is selected: [[[[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Element is selected: [[[[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]] - false
+Clicking on element: [[[[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Clicked on element: [[[[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> class name: product_sort_container]] -> xpath: .//option[normalize-space(.) = "Price (high to low)"]]
+Clicking on element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> xpath: //div[contains(@class,'inventory_item_name')]]
+02:02:56.972 [Test worker] ERROR commonutils.CommonUtils - Exception occurred: The element with the reference 4d6b2176-bc53-4793-9fa9-d85013fdbf04 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '24.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6d623535-8eff-4572-9629-098c5c9c2227, clickElement {id=4d6b2176-bc53-4793-9fa9-d85013fdbf04}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.1, moz:accessibilityChecks: false, moz:buildID: 20250529122813, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 5547, moz:profile: /var/folders/d3/fybdj1250cl..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> xpath: //div[contains(@class,'inventory_item_name')]]
+Session ID: 6d623535-8eff-4572-9629-098c5c9c2227
+org.openqa.selenium.StaleElementReferenceException: The element with the reference 4d6b2176-bc53-4793-9fa9-d85013fdbf04 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '24.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6d623535-8eff-4572-9629-098c5c9c2227, clickElement {id=4d6b2176-bc53-4793-9fa9-d85013fdbf04}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.1, moz:accessibilityChecks: false, moz:buildID: 20250529122813, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 5547, moz:profile: /var/folders/d3/fybdj1250cl..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (6d623535-8eff-4572-9629-098c5c9c2227)] -> xpath: //div[contains(@class,'inventory_item_name')]]
+Session ID: 6d623535-8eff-4572-9629-098c5c9c2227
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.33.0.jar:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405) ~[selenium-remote-driver-4.33.0.jar:?]
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$Un7WxaUn.click(Unknown Source) ~[?:?]
+	at stepdefs.StepDef.verifyProduct(StepDef.java:84) [test/:?]
 	at steps.Step.verifyProductPage(Step.java:35) [test/:?]
 	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
@@ -112,165 +144,7 @@ java.lang.RuntimeException: Failed to insert product name into the database.
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72) [gradle-worker-main-8.14.1.jar:8.14.1]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) [gradle-worker.jar:?]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) [gradle-worker.jar:?]
-Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at java.sql.DriverManager.getConnection(DriverManager.java:613) ~[java.sql:?]
-	at java.sql.DriverManager.getConnection(DriverManager.java:199) ~[java.sql:?]
-	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26) ~[test/:?]
-	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33) ~[test/:?]
-	... 64 more
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at java.sql.DriverManager.getConnection(DriverManager.java:613) ~[java.sql:?]
-	at java.sql.DriverManager.getConnection(DriverManager.java:199) ~[java.sql:?]
-	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26) ~[test/:?]
-	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33) ~[test/:?]
-	... 64 more
-Caused by: java.net.ConnectException: Connection refused
-	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
-	at sun.nio.ch.Net.connect(Net.java:535) ~[?:?]
-	at sun.nio.ch.Net.connect(Net.java:524) ~[?:?]
-	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:574) ~[?:?]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:282) ~[?:?]
-	at java.net.Socket.connect(Socket.java:665) ~[?:?]
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at java.sql.DriverManager.getConnection(DriverManager.java:613) ~[java.sql:?]
-	at java.sql.DriverManager.getConnection(DriverManager.java:199) ~[java.sql:?]
-	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26) ~[test/:?]
-	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33) ~[test/:?]
-	... 64 more
   Then user should be redirected to the Swag Labs inventory page # steps.Step.verifyProductPage()
 ]]></system-out>
-  <system-err><![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
-	at commonutils.DatabaseUtil.getConnection(DatabaseUtil.java:26)
-	at commonutils.DatabaseUtil.insertProductName(DatabaseUtil.java:33)
-	at stepdefs.StepDef.verifyProduct(StepDef.java:101)
-	at steps.Step.verifyProductPage(Step.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-	... 71 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:535)
-	at java.base/sun.nio.ch.Net.connect(Net.java:524)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:574)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:282)
-	at java.base/java.net.Socket.connect(Socket.java:665)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
-	... 74 more
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
