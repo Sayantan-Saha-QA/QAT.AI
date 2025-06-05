@@ -12,6 +12,10 @@ import org.json.JSONObject;
 
 public class DatabaseUtil {
 
+    private DatabaseUtil() {
+        // Prevent instantiation
+    }
+
     public static String DB_URL = "jdbc:mysql://localhost:3306/product_name";
     public static String DB_USER = "root";
     public static String DB_PASSWORD = "1234";

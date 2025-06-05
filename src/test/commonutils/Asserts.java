@@ -6,6 +6,10 @@ import org.testng.asserts.SoftAssert;
 
 public class Asserts {
 
+    private Asserts() {
+        // Private constructor to prevent instantiation
+    }
+
     public static SoftAssert softAssert = new SoftAssert();
     
     public static void assertEquals(Object actual, Object expected) {

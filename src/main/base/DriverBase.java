@@ -12,6 +12,10 @@ import java.util.Properties;
 
 public class DriverBase {
 
+    private DriverBase() {
+        // Prevent instantiation
+    }
+
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static final Logger logger = LogManager.getLogger(DriverBase.class);
 

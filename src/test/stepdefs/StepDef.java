@@ -1,6 +1,5 @@
 package stepdefs;
 
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebElement;
 
@@ -12,7 +11,6 @@ import static pages.LoginPage.*;
 import static pages.ProductPage.*;
 import static commonutils.Asserts.*;
 import static commonutils.CommonUtils.*;
-import static commonutils.CommonUtils.getConfig;
 import static commonutils.Waits.*;
 import static commonutils.DatabaseUtil.*;
 
@@ -20,7 +18,6 @@ import datamodels.LoginCredential;
 
 import org.testng.annotations.Listeners;
 import listeners.TestNGListener;
-import pages.ProductPage;
 
 @Listeners(TestNGListener.class)
 public class StepDef {
@@ -79,7 +76,16 @@ public class StepDef {
             dropdown.selectByVisibleText("Price (high to low)");
             Thread.sleep(3000);
 
-            for (WebElement product : productNames) {
+            final WebElement[] products = {
+                swagLabsBackpack,
+                sauceLabsBikeLight,
+                sauceLabsBoltTShirt,
+                sauceLabsFleeceJacket,
+                sauceLabsOnesie,
+                testAllTheThingsTShirt
+            };
+
+            for (WebElement product : products) {
                 scrollAction(product);
                 product.click();
                 String productDescriptionText = productDescription.getText();

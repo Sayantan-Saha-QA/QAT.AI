@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Waits {
 
+	private Waits() { } // Prevent instantiation
+
     //Fluent wait for page title
 	public static void waitTitle(String title) {
 		try {

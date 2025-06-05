@@ -4,6 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DriverManagerFactory {
+
+    private DriverManagerFactory() {
+    }
+    
     private static final Map<String, Class<? extends DriverManager>> registry = new HashMap<>();
 
     // Register a browser type and its manager class

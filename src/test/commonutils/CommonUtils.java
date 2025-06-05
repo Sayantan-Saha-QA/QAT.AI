@@ -12,15 +12,15 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import base.DriverBase;
+import static base.DriverBase.*;
 
-public class CommonUtils extends DriverBase{
+public class CommonUtils {
+
+    private CommonUtils() {
+        // Prevent instantiation
+    }
 
     public static final Logger logger = LogManager.getLogger(CommonUtils.class);
-
-    public static String getConfig(String fileName, String key) {
-        return DriverBase.getConfig(fileName, key);
-    }
 
     // Explicitly quit WebDriver and clean up resources
     public static void tearDown() {
