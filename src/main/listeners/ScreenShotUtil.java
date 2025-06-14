@@ -11,7 +11,6 @@ import org.openqa.selenium.TakesScreenshot;
 public class ScreenShotUtil {
 
     private ScreenShotUtil() {
-        // Prevent instantiation
     }
 
     public static void takeScreenShot(String stepName) {

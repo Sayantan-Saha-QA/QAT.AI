@@ -9,6 +9,7 @@ import java.util.List;
 
 import static pages.LoginPage.*;
 import static pages.ProductPage.*;
+import pages.ProductPage;
 import static commonutils.Asserts.*;
 import static commonutils.CommonUtils.*;
 import static commonutils.Waits.*;
@@ -66,7 +67,6 @@ public class StepDef {
             softAssertEquals(getDr().getTitle(), "Swag Labs");
             Thread.sleep(3000);
 
-            // Assuming 'sortBy' is your dropdown WebElement
             Select dropdown = new Select(sortBy);
             List<WebElement> options = dropdown.getOptions();
             for (WebElement option : options) {
@@ -76,21 +76,34 @@ public class StepDef {
             dropdown.selectByVisibleText("Price (high to low)");
             Thread.sleep(3000);
 
-            final WebElement[] products = {
+            
+            /*WebElement products[] = {
                 swagLabsBackpack,
                 sauceLabsBikeLight,
                 sauceLabsBoltTShirt,
                 sauceLabsFleeceJacket,
                 sauceLabsOnesie,
                 testAllTheThingsTShirt
+            };*/
+
+            String[] productsText = {
+                "swagLabsBackpack",
+                "sauceLabsBikeLight",
+                "sauceLabsBoltTShirt",
+                "sauceLabsFleeceJacket",
+                "sauceLabsOnesie",
+                "testAllTheThingsTShirt"
             };
 
-            for (WebElement product : products) {
+            for (String productText : productsText) {   
+                
+                WebElement product = (WebElement) ProductPage.class.
+                getField(productText).get(null);     
+
                 scrollAction(product);
                 product.click();
                 String productDescriptionText = productDescription.getText();
 
-                // insertProductName(productDescriptionText);
                 saveProductNameToJson(timestamp, productDescriptionText);
 
                 waitVisibility(backToProducts);

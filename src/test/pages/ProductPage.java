@@ -35,4 +35,13 @@ public class ProductPage {
     @FindBy(xpath = "//div[contains(@class,'inventory_item_desc')]")
     public static WebElement productDescription;
 
+    public final WebElement[] products = {
+                swagLabsBackpack,
+                sauceLabsBikeLight,
+                sauceLabsBoltTShirt,
+                sauceLabsFleeceJacket,
+                sauceLabsOnesie,
+                testAllTheThingsTShirt
+            };
+
 }

@@ -5,10 +5,11 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 
 import listeners.Listener;
 
-import org.apache.logging.log4j.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import static base.Logger.*;
 
 public class DriverBase {
 
@@ -17,7 +18,6 @@ public class DriverBase {
     }
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    private static final Logger logger = LogManager.getLogger(DriverBase.class);
 
     public static WebDriver setUp() {
         try {

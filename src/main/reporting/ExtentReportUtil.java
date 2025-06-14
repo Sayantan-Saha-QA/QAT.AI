@@ -26,15 +26,12 @@ public class ExtentReportUtil {
         extent.setSystemInfo("Tester", "Sayantan Saha");
     }
 
-    
-    // Flush the report
     public static void flushReport() {
         if (extent != null) {
             extent.flush();
         }
     }
 
-    // Create a test in the report
     public static ExtentTest createTest(String testName) {
         test = extent.createTest(testName);
         return test;

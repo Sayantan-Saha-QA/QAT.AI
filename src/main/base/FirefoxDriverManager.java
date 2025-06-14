@@ -9,6 +9,8 @@ public class FirefoxDriverManager implements DriverManager {
     public WebDriver createDriver() {
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--disable-extensions");
+        options.addArguments("--disable-gpu");
+        //options.addArguments("--headless"); // Run in headless mode for CI/CD environments
         
         return new FirefoxDriver(options);
     }
