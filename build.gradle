@@ -55,7 +55,7 @@ dependencies {
 
     // Reflections
     implementation 'org.reflections:reflections:0.10.2'
-
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
     //json
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
     implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
