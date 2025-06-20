@@ -1,11 +1,11 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ChromeDriverManager implements DriverManager {
     @Override
     public WebDriver createDriver() {
-        return new SafariDriver();
+        return new ChromeDriver();
     }
 }

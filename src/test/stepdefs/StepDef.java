@@ -2,6 +2,7 @@ package stepdefs;
 
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 import static base.DriverBase.*;
 
@@ -77,29 +78,20 @@ public class StepDef {
             Thread.sleep(3000);
 
             
-            /*WebElement products[] = {
+            WebElement products[] = {
                 swagLabsBackpack,
                 sauceLabsBikeLight,
                 sauceLabsBoltTShirt,
                 sauceLabsFleeceJacket,
                 sauceLabsOnesie,
                 testAllTheThingsTShirt
-            };*/
-
-            String[] productsText = {
-                "swagLabsBackpack",
-                "sauceLabsBikeLight",
-                "sauceLabsBoltTShirt",
-                "sauceLabsFleeceJacket",
-                "sauceLabsOnesie",
-                "testAllTheThingsTShirt"
             };
 
-            for (String productText : productsText) {   
+            for (WebElement product : products) {  
                 
-                WebElement product = (WebElement) ProductPage.class.
-                getField(productText).get(null);     
-
+                PageFactory.initElements(getDr(), ProductPage.class);
+                waitVisibility(product);
+                
                 scrollAction(product);
                 product.click();
                 String productDescriptionText = productDescription.getText();
@@ -108,6 +100,8 @@ public class StepDef {
 
                 waitVisibility(backToProducts);
                 backToProducts.click();
+
+                
             }
             Thread.sleep(3000);
         } catch (Exception e) {

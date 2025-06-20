@@ -14,7 +14,6 @@ import static base.Logger.*;
 public class DriverBase {
 
     private DriverBase() {
-        // Prevent instantiation
     }
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
@@ -31,17 +30,12 @@ public class DriverBase {
             Listener listener = new Listener();
             WebDriver decoratedDriver = new EventFiringDecorator<>(listener).decorate(webDriver);
 
-            // Store the decorated driver in ThreadLocal variable
             driver.set(decoratedDriver);
 
             String url = getConfig("config","URL");
-            // Delete cookies and maximize window, but Safari does not support window maximize
             decoratedDriver.manage().deleteAllCookies();
-            if (!browser.equalsIgnoreCase("safari")) {
-                decoratedDriver.manage().window().maximize();
-            } else {
-                logger.warn("Safari does not support window maximize operation.");
-            }
+            decoratedDriver.manage().window().maximize();
+
 
             if (url != null && !url.isEmpty()) {
                 decoratedDriver.get(url);
